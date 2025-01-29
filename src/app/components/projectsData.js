@@ -16,7 +16,7 @@ Als <span class="highlight">Datenbasis</span> dienten <span class="highlight">We
 Beim <span class="highlight">Benchmarking</span> wurden <span class="highlight">GPT-2, Llama 2</span> und <span class="highlight">Mistral</span> anhand von <span class="highlight">F1-Score, Exact Match</span> und <span class="highlight">Inference </span> verglichen. Während <span class="highlight">GPT-2 bei kleineren Datenmengen</span> solide Ergebnisse lieferte, überzeugte <span class="highlight">Llama 2</span> durch ein <span class="highlight">ausgewogenes Verhältnis von Genauigkeit und Effizienz</span>. <span class="highlight">Mistral</span> schnitt mit der <span class="highlight">besten Performance</span> in Bezug auf <span class="highlight">Geschwindigkeit und Präzision</span> ab. Abschließend wurde der <span class="highlight">Chatbot</span> in einer <span class="highlight">simulierten Umgebung</span> getestet, um <span class="highlight">Benutzerfreundlichkeit</span> und <span class="highlight">Leistungsfähigkeit</span> zu evaluieren.
                  `,
         image: "/chatbot.webp",
-        imagep: "/highway.png" },
+        imagep: "/highway.webp" },
 
 
     //Part Hackathon2
@@ -32,8 +32,8 @@ Für die Entwicklung der App wurden verschiedene Datenquellen und Technologien i
 
 Die <span class="highlight">Architektur</span> der App basierte auf einer skalierbaren <span class="highlight">Cloud-Infrastruktur</span>, umgesetzt mit Google Cloud-Diensten. <span class="highlight">Serverlose Funktionen</span> über <span class="highlight">Google Cloud Functions</span> sorgten für eine reibungslose Verarbeitung von Anfragen und eine synchrone Kommunikation zwischen den Systemkomponenten. Für das <span class="highlight">Frontend</span> wurde ein responsives Design mit <span class="highlight">Flutter</span> entwickelt, das interaktive Karten und Wegbeschreibungen einband. Die <span class="highlight">Gebäudeerkennung</span> durch Google Gemini wurde optimiert, um <span class="highlight">Metadaten</span> automatisch mit <span class="highlight">kulturellen und historischen Informationen</span> zu verknüpfen.
                   `,
-        image: "/urbann.png",
-        imagep: "/highway.png" },
+        image: "/urbann.webp",
+        imagep: "/highway.webp" },
 
 
 
@@ -51,7 +51,7 @@ Das Projekt basierte auf Sensordaten von Windkraftanlagen, einschließlich Tempe
 Dabei erfolgte eine Analyse der Stakeholder- Anforderungen, um Ziele zu definieren. Anschließend wurde eine skalierbare Datenpipeline entwickelt, die Sensordaten aus verschiedenen Quellen in Echtzeit aggregierte und aufbereitete. Der hybride <span class="highlight">CUSum_LoMST-Algorithmus</span>, der plötzliche <span class="highlight">Abweichungen und langfristige Trends identifiziert</span>, wurde implementiert, um <span class="highlight">Wartungsbedarf vorherzusagen</span>. Ein <span class="highlight">interaktives Dashboard</span> auf Basis von <span class="highlight">SAPUI5</span> ermöglichte eine visuelle Darstellung der Daten, wodurch potenzielle Störungen und Wartungsbedarfe schnell erkennbar wurden. Abschließend durchlief das System <span class="highlight">Tests</span> mit <span class="highlight">realen und simulierten Daten</span>.
                   `,
         image: "/windturbine.webp",
-        imagep: "/highway.png" },
+        imagep: "/highway.webp" },
 
 
 
@@ -68,7 +68,7 @@ Das Projekt basierte auf annotierten Bilddaten, die gezielt <span class="highlig
 
 Eine <span class="highlight">Pipeline</span>, implementiert mit <span class="highlight">TensorFlow und Keras</span>, strukturierte die Schritte von der <span class="highlight">Datenvorbereitung</span> bis zur <span class="highlight">Evaluierung</span>. Ein angepasstes <span class="highlight">Convolutional Neural Network (CNN)</span> bildete die Grundlage für die Schadenskategorisierung. Die <span class="highlight">Architektur</span> kombinierte leistungsstarke <span class="highlight">Convolutional- und Pooling-Schichten</span> mit Methoden wie Dropout und Batch Normalization, um die Modellstabilität und Generalisierbarkeit zu erhöhen. Der <span class="highlight">Trainingsprozess</span> setzte auf <span class="highlight">optimierte Algorithmen (Adam-Optimizer, Cross-Entropy-Loss-Funktion, Early Stopping Mechanismus)</span>, während gezieltes <span class="highlight">Hyperparameter-Tuning<span> eine präzise Feinabstimmung ermöglichte. Das finale Modell wurde anhand von <span class="highlight">Testdaten</span> bewertet, wobei <span class="highlight">Fehleranalysen</span> genutzt wurden, um <span class="highlight">Schwachstellen</span> zu identifizieren und die Ergebnisse zu verfeinern. Dieses iterative Vorgehen gewährleistete eine verlässliche und anwendungsorientierte Lösung.                  `,
         image: "/bridge.webp",
-        imagep: "/highway.png" },
+        imagep: "/highway.webp" },
 
 
 
@@ -83,8 +83,8 @@ Eine <span class="highlight">Pipeline</span>, implementiert mit <span class="hig
   
 Das Projekt wurde in mehreren Schritten realisiert: Zunächst wurden DSGVO-konforme Datenschutzmaßnahmen und Anforderungen an die KI-Modelle definiert. Für die <span class="highlight">Objekterkennung</span> wurde <span class="highlight">YOLO v5</span> integriert, das mithilfe eines  Datensatzes für die <span class="highlight">Erkennung von Fahrzeugkennzeichen feinabgestimmt (fine-tuned)</span>. <span class="highlight">DeepSORT</span> ermöglichte die <span class="highlight">Nachverfolgung und Bewegungsanalyse</span> erkannter Objekte. <span class="highlight">Algorithmen</span> zur <span class="highlight">Anonymisierung</span> sensibler Informationen wie <span class="highlight">Gesichter und Kennzeichen</span> wurden entwickelt und implementiert. Die <span class="highlight">verschlüsselte Speicherung</span> anonymisierter Daten erfolgte mithilfe des <span class="highlight">AES-Standards</span>. Abschließend wurden <span class="highlight">Modellgenauigkeit</span> mit <span class="highlight">realen und simulierten Daten getestet</span> und optimiert.
  `,
-        image: "/seccam2.png",
-        imagep: "/highway.png"},
+        image: "/seccam2.webp",
+        imagep: "/highway.webp"},
 
 
     //Gestenstreuerung
@@ -101,7 +101,7 @@ Zur Entwicklung wurde ein <span class="highlight">Gesten-Datensatz</span> erstel
 Das Modell basierte auf einem <span class="highlight">Convolutional Neural Network (CNN)</span> mit <span class="highlight">TensorFlow Lite</span>, speziell angepasst für <span class="highlight">ressourcenarme Hardware</span>. Durch <span class="highlight">reduzierte Eingangsauflösung, Quantisierung</span> und den Einsatz von <span class="highlight">Dropout</span> und <span class="highlight">Batch</span> wurde eine <span class="highlight">hohe Erkennungsgenauigkeit</span> bei <span class="highlight">schnellen Inferenzzeiten</span> erreicht. Die <span class="highlight">Steuerungslogik</span> verband <span class="highlight">erkannte Gesten</span> mit <span class="highlight">PC-Interaktionen</span> wie <span class="highlight">Mausbewegung, Klicks</span> und <span class="highlight">Scrollen</span>, wobei <span class="highlight">OpenCV</span> für die <span class="highlight">Bildverarbeitung</span> und <span class="highlight">WebSocket</span> für die <span class="highlight">PC-Kommunikation</span> genutzt wurden.
                   `,
         image: "/gestenprojekt.webp",
-        imagep: "/highway.png" },
+        imagep: "/highway.webp" },
 
 
     //WhoIsDown
@@ -117,7 +117,7 @@ Das Backend der Webapplikation wurde entwickelt, um eine effiziente Verwaltung v
 
 Die skalierbare <span class="highlight">Backend-Architektur</span> basierte auf <span class="highlight">RESTful APIs</span>, die unter anderem Benutzerregistrierung, Event-Management und Teilnehmerverwaltung ermöglichten. Zur <span class="highlight">Authentifizierung wurde JWT</span> eingesetzt, während serverseitige Validierungen und Fehlerbehandlungen die Sicherheit und Stabilität der APIs gewährleisteten. Eine optimierte Datenbankstruktur mit Fremdschlüsseln und Constraints sorgte für Datenintegrität und schnelle Abfragen. Für <span class="highlight">Benachrichtigungen</span> wurde eine Logik mit <span class="highlight">CRON-Jobs</span> implementiert, die zeitgesteuerte Erinnerungen automatisiert versendete. Abschließend wurde <span class="highlight">CI/CD (Continuous Integration/Continuous Deployment)-Prozesse</span> integriert, um eine <span class="highlight">automatisierte Bereitstellung</span> und <span class="highlight">regelmäßige Tests</span> zu gewährleisten.             `,
         image: "/whoisdown.webp",
-        imagep: "/highway.png" },
+        imagep: "/highway.webp" },
 ];
 
 export default projects;
