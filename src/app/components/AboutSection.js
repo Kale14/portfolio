@@ -1,75 +1,37 @@
 "use client";
-import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function AboutSection() {
-    console.log("AboutSection rendered");
-    const [boxWidth, setBoxWidth] = useState(62); // Initiale Breite in Prozent
-
-    useEffect(() => {
-        let currentWidth = 62; // Initiale Breite
-        let animationFrame;
-
-        const handleScroll = () => {
-            const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-            const maxScroll = window.innerHeight * 2;
-            const minWidth = 49;
-
-            const targetWidth = Math.max(
-                minWidth,
-                62 - (scrollTop / maxScroll) * 60
-            );
-
-            const animate = () => {
-                currentWidth += (targetWidth - currentWidth) * 0.1; // Interpoliere langsam zur Zielbreite
-                setBoxWidth(currentWidth);
-
-                if (Math.abs(targetWidth - currentWidth) > 0.5) {
-                    animationFrame = requestAnimationFrame(animate); // Wiederhole Animation
-                }
-            };
-
-            cancelAnimationFrame(animationFrame); // Bestehende Animation abbrechen
-            animationFrame = requestAnimationFrame(animate); // Neue Animation starten
-        };
-
-        document.body.addEventListener("scroll", handleScroll);
-
-        return () => {
-            document.body.removeEventListener("scroll", handleScroll);
-            cancelAnimationFrame(animationFrame); // Cleanup
-        };
-    }, []);
-
-
-
-
     return (
-        <section
-            id="about-section"
-            className="relative mb-20"
-        >
-            <div
-                className="bg-gray-300  h-[390px] p-6 rounded-lg ease-in-out mx-auto mt-20 flex overflow-hidden"
-                style={{
-                    width: `${boxWidth}%`, // Dynamische Breite
-                    boxShadow: "0 0 100px 20px rgba(255, 255, 255, 1)",
-                }}
-            >
-                {/* Linke Seite: Bild */}
-                <div className="flex-shrink-0 h-full">
-                    <img
-                        src="/image.jpg" // Ersetze mit deinem Bildpfad
-                        alt="Über mich"
-                        className="h-full w-auto object-cover rounded-l-lg shadow-right shadow-left shadow-top shadow-bottom"
-                    />
-                </div>
-                {/* Rechte Seite: Text */}
-                <div className="flex flex-col justify-center items-start pl-14 pr-6 mb-4 mt-4 w-full">
-                    <h2 className="text-3xl font-bold text-center mb-8">Hey, ich bin Khalil!</h2>
-                    <p className="text-gray-700 break-words">
-                         mit einer Leidenschaft für Künstliche Intelligenz und Prozessautomatisierung habe ich das Ziel, durch kreative Ansätze datenbasierte Lösungen zu entwickeln, die echten Mehrwerten schaffen.
-                        Dabei fasziniert mich nicht nur das Ergebnis, sondern auch, wie und warum Dinge funktionieren – ich will hinter die Kulissen blicken und tief in die Materie eintauchen, um innovative Anwendungen zu gestalten.
+        <section id="about-section" className="relative min-h-screen flex items-center justify-between bg-cover bg-center px-16 sm:px-40"
+                 style={{ backgroundImage: "linear-gradient(to bottom, rgba(10, 25, 47, 0.8) 30%, rgba(10, 25, 47, 0.7) 70%, rgba(10, 25, 47, 1) 85%), url('/back.png')" }}>
+            <div className="max-w-8xl w-full grid grid-cols-1 sm:grid-cols-2 gap-20 items-center">
+                {/* Linke Seite: Überschrift + Text */}
+                <div className="text-white text-left max-w-2xl sm:max-w-3xl lg:max-w-4xl order-1 sm:order-1">
+                    <h1 className="text-7xl sm:text-8xl font-bold leading-tight">
+                        Hallo, ich bin <span className="text-green-400">Khalil</span>
+                    </h1>
+                    <p className="text-3xl mt-8 leading-relaxed">
+                        Mit Leidenschaft für KI und Prozessautomatisierung entwickle ich kreative, datenbasierte Lösungen mit echtem Mehrwert. Dabei fasziniert mich nicht nur das Ergebnis, sondern auch die Mechanismen dahinter – ich tauche tief ein, um innovative Anwendungen zu gestalten
                     </p>
+                    <button
+                        className="mt-12 bg-green-500 hover:bg-green-600 text-white font-semibold py-5 px-12 rounded shadow-lg text-2xl"
+                        onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}>
+                        Projekte ansehen
+                    </button>
+                </div>
+
+                {/* Rechte Seite: Bild mit Skills */}
+                <div className="relative flex justify-start order-2 sm:order-2 w-full sm:px-0 ml-4 sm:ml-36">
+                    <div className="relative w-80 h-96 sm:w-[400px] sm:h-[500px] rounded-lg overflow-hidden shadow-lg">
+                        <Image src="/image.jpg" alt="Khalil" layout="fill" objectFit="cover" className="rounded-lg" />
+                    </div>
+
+                    {/* Floating Skill-Tags passend zum Design */}
+                    <div className="hidden sm:block absolute top-[-100px] left-[140px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">JavaScript</div>
+                    <div className="hidden sm:block absolute top-[80px] left-[-140px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">Python</div>
+                    <div className="hidden sm:block absolute bottom-[-90px] left-[50px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">Java</div>
+                    <div className="hidden sm:block absolute top-[300px] left-[440px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">Swift</div>
                 </div>
             </div>
         </section>
