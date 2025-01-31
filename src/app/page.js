@@ -1,7 +1,6 @@
 import AboutSection from "./components/AboutSection";
-import TimelineSection from "@/app/components/TimelineSection";
-import ProjectsSectionGoing from "@/app/components/ProjectsSectionGoing";
 import ProjectSectionDone from "@/app/components/ProjectSectionDone";
+import ExperienceSection from "@/app/components/ExperienceSection";
 
 
 export default function Page() {
@@ -9,7 +8,7 @@ export default function Page() {
         <main>
             <AboutSection />
             <ProjectSectionDone />
-            <TimelineSection />
+            <ExperienceSection />
             <footer className= "text-black py-4 mt-14 text-center">
                 <p className="text-sm">
                     © 2025 Khalil Hasan. Alle Rechte vorbehalten.
