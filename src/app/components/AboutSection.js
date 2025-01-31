@@ -31,7 +31,7 @@ export default function AboutSection() {
                     <div className="hidden sm:block absolute top-[-100px] left-[140px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">JavaScript</div>
                     <div className="hidden sm:block absolute top-[80px] left-[-140px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">Python</div>
                     <div className="hidden sm:block absolute bottom-[-90px] left-[50px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">Java</div>
-                    <div className="hidden sm:block absolute top-[300px] left-[440px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">Swift</div>
+                    <div className="hidden sm:block absolute top-[300px] left-[440px] border-2 border-green-900 text-white px-5 py-3 rounded-md text-lg bg-transparent">SAP</div>
                 </div>
             </div>
         </section>
