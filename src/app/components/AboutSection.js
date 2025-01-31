@@ -12,7 +12,7 @@ export default function AboutSection() {
                         Hallo, ich bin <span className="text-green-400">Khalil</span>
                     </h1>
                     <p className="text-3xl mt-8 leading-relaxed">
-                        Mit Leidenschaft für KI und Prozessautomatisierung entwickle ich kreative, datenbasierte Lösungen mit echtem Mehrwert. Dabei fasziniert mich nicht nur das Ergebnis, sondern auch die Mechanismen dahinter – ich tauche tief ein, um innovative Anwendungen zu gestalten
+                        Mit Leidenschaft für KI und Prozessautomatisierung entwickle ich kreative, datenbasierte Lösungen mit echtem Mehrwert. Dabei fasziniert mich nicht nur das Ergebnis, sondern auch die Mechanismen dahinter – ich tauche tief ein, um innovative Anwendungen zu gestalten!
                     </p>
                     <button
                         className="mt-12 bg-green-500 hover:bg-green-600 text-white font-semibold py-5 px-12 rounded shadow-lg text-2xl"
