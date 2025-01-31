@@ -8,7 +8,6 @@ export default function Page() {
     return (
         <main>
             <AboutSection />
-            <ProjectsSectionGoing />
             <ProjectSectionDone />
             <TimelineSection />
             <footer className= "text-black py-4 mt-14 text-center">
