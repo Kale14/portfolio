@@ -1,7 +1,7 @@
 "use client";
 import { FaPython, FaJava, FaReact, FaDocker, FaAws, FaGit, FaCuttlefish } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
-import { SiMysql, SiPostgresql, SiMongodb, SiDjango, SiFlask, SiTensorflow, SiPytorch, SiBootstrap, SiTailwindcss, SiSap, SiKotlin, SiDart, SiR, SiHtml5, SiCss3, SiSqlite, SiFirebase, SiPostman } from "react-icons/si";
+import { SiMysql, SiPostgresql, SiMongodb, SiDjango, SiFlask, SiTensorflow, SiPytorch, SiBootstrap, SiTailwindcss, SiSap, SiKotlin, SiDart, SiR, SiHtml5, SiSqlite, SiFirebase, SiPostman } from "react-icons/si";
 import { useState } from "react";
 
 const skillsData = {
