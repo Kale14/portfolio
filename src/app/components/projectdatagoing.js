@@ -5,7 +5,7 @@ const projects = [
 
     //Part Hackathon1
     { title: "Sensoria ",
-        date: "02/2025",
+        date: "2025",
         duration: "3 Monate",
         company: "Google",
         status: "In Arbeit",

@@ -40,7 +40,7 @@ export default function ProjectsSectionGoing() {
     };
 
     return (
-        <section id="projects" className="relative bg-white bg-opacity-60 mt-20">
+        <section id="projects" className="relative bg-opacity-60 mt-20">
             {/* Überschrift */}
             <h2 className="text-3xl font-bold text-center mb-8">Portfolio</h2>
 
