@@ -3,7 +3,7 @@ import experiences from "./experiencesData"; // Daten für die Erfahrungen
 
 export default function ExperienceSection() {
     return (
-        <section id="experience" className="relative min-h-screen px-8 sm:px-40 mt-28 pt-16">
+        <section id="experience" className="relative px-8 sm:px-40 pt-16 pb-16 mt-28">
             {/* Überschrift */}
             <h2 className="text-white text-4xl font-bold mb-8">Meine Erfahrungen</h2>
 
