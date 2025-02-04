@@ -3,138 +3,340 @@ const projects = [
 
 
     //Part Hackathon1
-    { title: "Sensoria ",
-        date: "2025",
-        duration: "3 Monate",
-        company: "Google",
+    { title: "Sensoria",
+        subtitle: "Barrierefreies Baseball-Erlebnis",
+        description: "Der Sensoria wurde beim Google Cloud x MLB™ Hackathon entwickelt, um blinden Menschen ein interaktives und barrierefreies Spielerlebnis zu bieten. Das System nutzt Echtzeit-Spielereignisse, um über intuitive Vibrationsmuster und KI-generierte Audiozusammenfassungen ein Spielgefühl zu vermitteln – ganz ohne visuelle Reize",
+        images: "/baseball.webp",
+        technologies: ["Google AI", "Google Cloud", "TensorFlow", "NLP", "React", "Firebase"],
+        image: "/sensoria.jpg",
         status: "In Arbeit",
-        description: "Prototyp für Barrierefreiheit beim Baseball.",
-        details: `Der <span class="highlight">Prototype</span> wurde im Rahmen des <span class="highlight">Google Cloud x MLB™ Hackathons – Building with Gemini Models</span> entwickelt, um <span class="highlight">blinden Menschen</span> ein <span class="highlight">barrierefreies Baseballerlebnis</span> zu ermöglichen. Der Prototyp kombiniert <span class="highlight">Vibrationsmuster</span> zur <span class="highlight">Echtzeit-Übertragung</span> von <span class="highlight">Spielereignissen</span> mit einer <span class="highlight">verständlichen Audiozusammenfassung</span> der <span class="highlight">Highlights</span> nach Spielende.  
+        date: "2024",
+        challenges: [
+            {
+                text: "Vibrationsmuster mussten intuitiv verständlich sein",
+                solution: "Durchführung von Usability-Tests mit blinden Personen, um eindeutige, leicht unterscheidbare Muster für verschiedene Spielereignisse zu entwickeln.",
+            },
+            {
+                text: "Spielereignisse mussten in Echtzeit verarbeitet werden",
+                solution: "Implementierung eines Filter- und Prioritätssystems, das irrelevante Daten ausblendet und nur entscheidende Spielmomente weiterleitet.",
+            },
+            {
+                text: "Unterschiedliche Wahrnehmung von Vibrationen bei Nutzern",
+                solution: "Anpassung der Vibrationsstärke basierend auf Nutzerfeedback und personalisierbare Einstellungen, um die Sensibilität individuell anzupassen.",
+            },
+            {
+                text: "Vibrationsmuster mussten intuitiv verständlich sein",
+                solution: "Implementierung eines Fallback-Mechanismus, der bei fehlenden Echtzeit-Daten auf alternative Datenquellen zurückgreift.",
+            },
+        ],
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
+    },
 
-Für die Umsetzung wurden <span class="highlight">Echtzeit-Spielereignisse</span> wie <span class="highlight">Würfe</span>, <span class="highlight">Treffer</span> und <span class="highlight">Spielerbewegungen</span> durch <span class="highlight">Google AI-Tools</span> analysiert und in <span class="highlight">priorisierte Kategorien</span> eingeteilt. Wichtige Ereignisse wurden durch <span class="highlight">spezifische Vibrationsmuster</span> vermittelt – von <span class="highlight">kurzen Impulsen</span> für einfache Aktionen bis hin zu <span class="highlight">intensiveren Signalen</span> für bedeutende Momente wie Home Runs. Eine <span class="highlight">NLP-basierte Audiozusammenfassung</span> stellte sicher, dass <span class="highlight">Nutzer</span> nach dem Spiel eine <span class="highlight">verständliche Rückschau</span> der wichtigsten <span class="highlight">Szenen</span> erhielten.  
-
-Die <span class="highlight">Entwicklung</span> basierte auf einer <span class="highlight">Nutzerbefragung</span>, um die <span class="highlight">Anforderungen blinder Menschen</span> gezielt zu berücksichtigen. Anschließende <span class="highlight">Usability-Tests</span> überprüften die <span class="highlight">Intuitivität der Vibrationsmuster</span> und die <span class="highlight">Verständlichkeit der Audiodaten</span>, wobei <span class="highlight">iteratives Feedback</span> zur <span class="highlight">Optimierung des Systems</span> genutzt wurde.  
-                  `,
-        image: "/baseball.webp",
-        imagep: "/highway.png" },
 
 
     //Part Bachelorarbeit
-    { title: "Bachelorarbeit",
-        date: "2024",
-        duration: "3 Monate",
-        company: "HTW",
-        status: "Abgeschlossen",
-        description: "Another amazing project.",
-        details: `Die Bachelorarbeit widmete sich der <span class="highlight">Entwicklung eines Chatbot-Prototyps</span> zur <span class="highlight">Optimierung des Wissensmanagements in Unternehmen</span>. Ziel war es, den <span class="highlight">Zugang zu Informationen</span> durch <span class="highlight">KI-gestützte Technologien</span> effizienter zu gestalten und moderne <span class="highlight">Sprachmodelle</span> wie <span class="highlight">GPT-2, Llama 2</span> und <span class="highlight">Mistral</span> gezielt einzusetzen.
-        
-Als <span class="highlight">Datenbasis</span> dienten <span class="highlight">Webseiteninhalte</span> und <span class="highlight">PDF-Dokumente</span> der Hochschule für Technik und Wirtschaft Berlin, die durch <span class="highlight">Web-Scraping</span> extrahiert, manuell überarbeitet und in <span class="highlight">Frage-Antwort-Paare</span> umgewandelt wurden. Für die Umsetzung wurde das <span class="highlight">Django-Framework</span> genutzt, während die <span class="highlight">Integration der Sprachmodelle</span> durch <span class="highlight">Feintuning</span> mit <span class="highlight">(Q)-LoRA</span> erfolgte, um sie an spezifische Anwendungsfälle anzupassen. Eine <span class="highlight">Pipeline</span> gewährleistete eine <span class="highlight">kontinuierliche Aktualisierung</span> der Wissensbasis. <span class="highlight">Hyperparameter-Optimierungen</span> durch <span class="highlight">Grid Search</span> und <span class="highlight">Random Search</span> verbesserten die <span class="highlight">Modellperformance</span>.
-
-Beim <span class="highlight">Benchmarking</span> wurden <span class="highlight">GPT-2, Llama 2</span> und <span class="highlight">Mistral</span> anhand von <span class="highlight">F1-Score, Exact Match</span> und <span class="highlight">Inference </span> verglichen. Während <span class="highlight">GPT-2 bei kleineren Datenmengen</span> solide Ergebnisse lieferte, überzeugte <span class="highlight">Llama 2</span> durch ein <span class="highlight">ausgewogenes Verhältnis von Genauigkeit und Effizienz</span>. <span class="highlight">Mistral</span> schnitt mit der <span class="highlight">besten Performance</span> in Bezug auf <span class="highlight">Geschwindigkeit und Präzision</span> ab. Abschließend wurde der <span class="highlight">Chatbot</span> in einer <span class="highlight">simulierten Umgebung</span> getestet, um <span class="highlight">Benutzerfreundlichkeit</span> und <span class="highlight">Leistungsfähigkeit</span> zu evaluieren.
-                 `,
-        image: "/chatbot.webp",
-        imagep: "/highway.webp" },
+    {
+        "title": "Bachelorarbeit",
+        "subtitle": "KI-gestützter Chatbot zur Optimierung des Wissensmanagements in Unternehmen",
+        "description": "Wissen effizient abrufen, statt lange zu suchen. Im Rahmen meiner Bachelorarbeit wurde ein KI-gestützter Chatbot entwickelt, der das Wissensmanagement in Unternehmen optimiert. Durch die Integration moderner Sprachmodelle wie GPT-2, Llama 2 und Mistral kann der Chatbot dynamisch auf Anfragen reagieren, kontextbezogene Informationen bereitstellen und kontinuierlich aktualisiert werden.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "Django (MTV-Architektur)",
+            "GPT-2",
+            "Llama 2",
+            "Mistral",
+            "Q-LoRA",
+            "Web-Scraping",
+            "Automatisierte Datenpipeline",
+            "Optuna"
+        ],
+        "image": "/chatbot2.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "Modelle mussten mit begrenzten Ressourcen effizient trainiert werden",
+                "solution": "Einsatz von Q-LoRA (Quantized LoRA) zur Speicher- und Rechenzeitoptimierung, um große Modelle auf begrenzter Hardware zu feintunen."
+            },
+            {
+                "text": "Web-Scraping erzeugte unstrukturierte und redundante Daten",
+                "solution": "Implementierung eines automatisierten Preprocessing-Workflows, um irrelevante Inhalte zu filtern und strukturierte Wissensbausteine zu generieren."
+            },
+            {
+                "text": "Fehlende Kontextwahrung bei Konversationen",
+                "solution": "Speicherung von Konversationsverläufen in einer temporären Datenbank, um den Kontext während einer Sitzung beizubehalten und präzisere Antworten zu generieren."
+            },
+            {
+                "text": "Wissensbasis musste kontinuierlich aktualisiert werden",
+                "solution": "Entwicklung einer Pipeline zur Integration neuer Informationen, damit der Chatbot mit aktuellen Daten arbeitet."
+            },
+            {
+                "text": "Unterschiedliche Stärken und Schwächen der Modelle",
+                "solution": "Durchführung eines Benchmarks anhand der Metriken F1-Score, Exact Match und Inference Time, um das optimale Modell für die Anwendung zu identifizieren."
+            },
+            {
+                "text": "Hyperparameter-Optimierung für bestmögliche Ergebnisse",
+                "solution": "Verwendung von Optuna für eine automatische Hyperparameter-Suche, um die beste Kombination aus Lernrate, Batchgröße und Epochenanzahl zu ermitteln."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    },
 
 
     //Part Hackathon2
-    { title: "UrbanGuide",
-        date: "2024",
-        duration: "2 Monate",
-        company: "Google",
-        status: "Abgeschlossen",
-        description: "Another one.",
-        details: `Im Rahmen eines Google AI Hackathon wurde UrbanGuide entwickelt, eine Web-App, die <span class="highlight">Touristen</span> ermöglicht, ihre <span class="highlight">Reiseerlebnisse</span> zu <span class="highlight">personalisieren</span> und <span class="highlight">Sehenswürdigkeiten interaktiv</span> zu <span class="highlight">entdecken</span>. Mithilfe von <span class="highlight">Gebäudeerkennung</span> und <span class="highlight">dynamischer Tourplanung</span> bietet die App detaillierte Informationen zu <span class="highlight">architektonischen Highlights</span>. Die Kombination aus Echtzeit-Routenanpassung und benutzerfreundlicher Navigation schafft ein modernes Werkzeug für Reisende.
-        
-Für die Entwicklung der App wurden verschiedene Datenquellen und Technologien integriert, um ein dynamisches und benutzerfreundliches Erlebnis zu schaffen. <span class="highlight">Standortdaten</span> von der <span class="highlight">Google Maps API</span> ermöglichten präzise Geolokalisierung und <span class="highlight">Navigation</span>, während <span class="highlight">visuelle Erkennungsdaten</span> durch <span class="highlight">Google Gemini</span> <span class="highlight">detaillierte Informationen</span> zu Sehenswürdigkeiten lieferten. <span class="highlight">Nutzerpräferenzen und -historien</span> wurden in der <span class="highlight">Google Firestore-Datenbank</span> gespeichert, um <span class="highlight">personalisierte Empfehlungen</span> zu generieren. Verkehrs- und Wetterdaten sorgten für dynamische Touranpassungen.
-
-Die <span class="highlight">Architektur</span> der App basierte auf einer skalierbaren <span class="highlight">Cloud-Infrastruktur</span>, umgesetzt mit Google Cloud-Diensten. <span class="highlight">Serverlose Funktionen</span> über <span class="highlight">Google Cloud Functions</span> sorgten für eine reibungslose Verarbeitung von Anfragen und eine synchrone Kommunikation zwischen den Systemkomponenten. Für das <span class="highlight">Frontend</span> wurde ein responsives Design mit <span class="highlight">Flutter</span> entwickelt, das interaktive Karten und Wegbeschreibungen einband. Die <span class="highlight">Gebäudeerkennung</span> durch Google Gemini wurde optimiert, um <span class="highlight">Metadaten</span> automatisch mit <span class="highlight">kulturellen und historischen Informationen</span> zu verknüpfen.
-                  `,
-        image: "/urbann.webp",
-        imagep: "/highway.webp" },
+    {
+        "title": "UrbanGuide",
+        "subtitle": "KI-gestützte App zur Stadterkundung mit Gebäudeerkennung und personalisierten Empfehlungen",
+        "description": "Eine Stadt zu erkunden, sollte intuitiv und individuell sein. UrbanGuide kombiniert Gebäudeerkennung, personalisierte Empfehlungen und dynamische Tourplanung, um Sehenswürdigkeiten in Echtzeit zu identifizieren und interaktive Reiseerlebnisse zu schaffen. Durch die Integration von KI-gestützter Objekterkennung und Sprachmodellen bietet die App detaillierte Infos zu architektonischen Highlights und Sehenswürdigkeiten. Nutzer erhalten kontextbezogene Erklärungen in Echtzeit, die basierend auf erkannten Gebäuden generiert werden – alles in einer nutzerfreundlichen Oberfläche.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "Google Gemini",
+            "Google Maps API",
+            "Google Cloud Functions",
+            "Google Firestore",
+            "Flutter",
+        ],
+        "image": "/Urbanguid.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "Verbindungsabbrüche der Applikation bei Benutzer",
+                "solution": "Implementierung eines Offline-Modus, der die zuletzt geladenen Tourdaten zwischenspeichert und eine reibungslose Nutzung ohne Internetverbindung ermöglicht."
+            },
+            {
+                "text": "Hohe Latenzzeiten bei Gebäudeerkennung und Navigation",
+                "solution": "Caching und Parallelisierung von API-Aufrufen, um die Ladezeiten für Karten und Sehenswürdigkeiten zu reduzieren."
+            },
+            {
+                "text": "Verständliche Antworten für Touristen mit unterschiedlichem Vorwissen",
+                "solution": "Anpassung der generierten Antworten basierend auf einem Nutzerprofil, das Vorwissen (z. B. Laie oder Architektur-Fan) berücksichtigt, um Texte klar, informativ und zielgruppengerecht zu gestalten."
+            },
+            {
+                "text": "Unterschiedliche Informationstiefen",
+                "solution": "Einführung von dynamischen Info-Ebenen, bei denen Nutzer selbst entscheiden können, ob sie kurze Zusammenfassungen oder tiefgehende Details über ein Gebäude erhalten möchten."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    },
 
 
 
     //Digital Twin
-    { title: "Digital Twin",
-        date: "2023",
-        duration: "8 Monate",
-        company: "PwC",
-        status: "Abgeschlossen",
-        description: "Digital Twin für Energiewirtschaft",
-        details: `Das Ziel des Projekts war die Entwicklung eines <span class="highlight">digitalen Zwillings</span> für <span class="highlight">Windkraftanlagen</span>, um Betriebs- und Wartungsprozesse zu optimieren. Der digitale Zwilling ermöglichte die kontinuierliche <span class="highlight">Überwachung</span> von Sensordaten in <span class="highlight">Echtzeit</span> sowie die frühzeitige <span class="highlight">Identifikation von Anomalien</span>. Dies trug zur Reduzierung von Wartungskosten, einer gesteigerten Anlagenverfügbarkeit und einer verbesserten Entscheidungsgrundlage für Betreiber bei.
-
-Das Projekt basierte auf Sensordaten von Windkraftanlagen, einschließlich Temperatur, Vibration, Rotorendrehzahl, Energieproduktion und Wetterbedingungen. Eine entwickelte <span class="highlight">Datenpipeline</span> ermöglichte die <span class="highlight">Erfassung, Filterung und Bereitstellung</span> der Daten in Echtzeit. Zusätzlich wurden historische Daten zur Modellkalibrierung und Validierung integriert, um die Vorhersagegenauigkeit zu optimieren. Um die <span class="highlight">Analysequalität</span> zu gewährleisten, kamen <span class="highlight">Methoden</span> wie <span class="highlight">Datenbereinigung, Normalisierung und Feature-Engineering</span> zum Einsatz.
-
-Dabei erfolgte eine Analyse der Stakeholder- Anforderungen, um Ziele zu definieren. Anschließend wurde eine skalierbare Datenpipeline entwickelt, die Sensordaten aus verschiedenen Quellen in Echtzeit aggregierte und aufbereitete. Der hybride <span class="highlight">CUSum_LoMST-Algorithmus</span>, der plötzliche <span class="highlight">Abweichungen und langfristige Trends identifiziert</span>, wurde implementiert, um <span class="highlight">Wartungsbedarf vorherzusagen</span>. Ein <span class="highlight">interaktives Dashboard</span> auf Basis von <span class="highlight">SAPUI5</span> ermöglichte eine visuelle Darstellung der Daten, wodurch potenzielle Störungen und Wartungsbedarfe schnell erkennbar wurden. Abschließend durchlief das System <span class="highlight">Tests</span> mit <span class="highlight">realen und simulierten Daten</span>.
-                  `,
-        image: "/windturbine.webp",
-        imagep: "/highway.webp" },
+    {
+        "title": "Digital Twin",
+        "subtitle": "Datengetriebene Lösung zur Optimierung von Windkraftanlagen",
+        "description": "Wie kann man den Betrieb von Windkraftanlagen effizienter, kostensparender und zuverlässiger gestalten? Die Antwort: Ein digitaler Zwilling. In diesem Projekt habe ich eine intelligente, datengetriebene Lösung entwickelt, die Sensordaten in Echtzeit analysiert und Anomalien frühzeitig erkennt. Durch den Einsatz modernster Algorithmen ermöglicht das System eine vorausschauende Wartung und reduziert Ausfallzeiten– alles in einer interaktiven, leicht verständlichen Oberfläche.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Scikit-Learn",
+            "TensorFlow",
+            "Flask",
+            "CUSum_LoMST",
+            "SAPUI5",
+            "MySQL"
+        ],
+        "image": "/wind6.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "Sensordaten in Echtzeit effizient verarbeiten",
+                "solution": "Eine skalierbare Datenpipeline, die große Datenmengen aggregiert, filtert und vorbereitet, um Verzögerungen zu minimieren."
+            },
+            {
+                "text": "Präzise Anomalieerkennung ohne Fehldiagnosen",
+                "solution": "Entwicklung eines hybriden Algorithmus (CUSum_LoMST), der feine Abweichungen erkennt und gezielt auf bevorstehende Wartungen hinweist."
+            },
+            {
+                "text": "Verschiedene Stakeholder benötigten verständliche und handlungsorientierte Visualisierungen",
+                "solution": "Entwicklung eines interaktiven Dashboards mit SAPUI5, das kritische Zustände visuell hervorhebt und klare Wartungsempfehlungen für das Management und das Wartungsteam bereitstellt."
+            },
+            {
+                "text": "Fehlalarme durch verrauschte oder unvollständige Sensordaten",
+                "solution": "Implementierung von Datenbereinigungs- und Glättungsverfahren zur Eliminierung fehlerhafter Messwerte und Vermeidung unnötiger Wartungseinsätze."
+            },
+            {
+                "text": "Fehlalarme durch verrauschte oder unvollständige Sensordaten",
+                "solution": "Implementierung von Datenbereinigungs- und Glättungsverfahren zur Eliminierung fehlerhafter Messwerte und Vermeidung unnötiger Wartungseinsätze."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    },
 
 
 
     //Klassifizierung
-    { title: "Brückenschäden",
-        date: "2023",
-        duration: "2 Monate",
-        company: "PWC",
-        status: "Abgeschlossen",
-        description: "Klassifizierung von Brückenschäden mit CNN-Modell",
-        details: `Das Ziel des Projekts war die Entwicklung eines <span class="highlight">maschinellen Lernmodells</span> zur <span class="highlight">Klassifikation</span> von <span class="highlight">Brückenschäden</span>. Dieses Modell unterstützt die Instandhaltung durch <span class="highlight">Erkennung und Priorisierung von Schäden</span>, wodurch <span class="highlight">Wartungsprozesse optimiert</span> und die Sicherheit von Infrastrukturen erhöht werden konnten.
-        
-Das Projekt basierte auf annotierten Bilddaten, die gezielt <span class="highlight">Schadensarten wie Risse, Abplatzungen und Korrosion</span> abbildeten. Für eine hohe <span class="highlight">Trainingsqualität</span> wurden die Bilddaten vorverarbeitet, indem sie <span class="highlight">skaliert, normalisiert</span> und durch <span class="highlight">Augmentationstechniken</span> wie <span class="highlight">Rotation und Spiegelung</span> erweitert wurden. Die Daten wurden anschließend in Trainings-, Validierungs- und Testsets aufgeteilt, um die Modellleistung zu optimieren und Überanpassungen zu vermeiden.
-
-Eine <span class="highlight">Pipeline</span>, implementiert mit <span class="highlight">TensorFlow und Keras</span>, strukturierte die Schritte von der <span class="highlight">Datenvorbereitung</span> bis zur <span class="highlight">Evaluierung</span>. Ein angepasstes <span class="highlight">Convolutional Neural Network (CNN)</span> bildete die Grundlage für die Schadenskategorisierung. Die <span class="highlight">Architektur</span> kombinierte leistungsstarke <span class="highlight">Convolutional- und Pooling-Schichten</span> mit Methoden wie Dropout und Batch Normalization, um die Modellstabilität und Generalisierbarkeit zu erhöhen. Der <span class="highlight">Trainingsprozess</span> setzte auf <span class="highlight">optimierte Algorithmen (Adam-Optimizer, Cross-Entropy-Loss-Funktion, Early Stopping Mechanismus)</span>, während gezieltes <span class="highlight">Hyperparameter-Tuning<span> eine präzise Feinabstimmung ermöglichte. Das finale Modell wurde anhand von <span class="highlight">Testdaten</span> bewertet, wobei <span class="highlight">Fehleranalysen</span> genutzt wurden, um <span class="highlight">Schwachstellen</span> zu identifizieren und die Ergebnisse zu verfeinern. Dieses iterative Vorgehen gewährleistete eine verlässliche und anwendungsorientierte Lösung.                  `,
-        image: "/bridge.webp",
-        imagep: "/highway.webp" },
+    {
+        "title": "Brückenschäden",
+        "subtitle": "Klassifizierung von Brückenschäden mit maschinellem Lernen",
+        "description": "Brückenschäden frühzeitig erkennen und gezielt beheben – bevor sie zur Gefahr werden. Dieses Projekt nutzt maschinelles Lernen zur automatisierten Schadensklassifikation, um die Effizienz von Wartungsprozessen zu steigern. Durch die Analyse von annotierten Bilddaten erkennt das Modell Risse, Abplatzungen und Korrosion mit hoher Präzision, priorisiert Instandhaltungsmaßnahmen und erhöht so die Sicherheit von Infrastrukturen.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "Convolutional Neural Networks (CNN)",
+            "TensorFlow",
+            "Keras",
+            "Adam-Optimizer",
+            "Cross-Entropy-Loss",
+            "OpenCV",
+            "NumPy",
+            "Pandas",
+            "Grid Search",
+            "k-fache Cross-Validation"
+        ],
+        "image": "/brueck1.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "Modell hatte Schwierigkeiten mit komplexen Schadensmustern",
+                "solution": "Anpassung der CNN-Architektur mit zusätzlichen Convolutional-Schichten und Integration von Batch Normalization zur besseren Merkmalsextraktion."
+            },
+            {
+                "text": "Datensatz enthielt zu wenige Beispiele für seltene Schäden",
+                "solution": "Gezielte Datenaugmentation für unterrepräsentierte Schadenskategorien durch Rotation, Spiegelung und künstliche Generierung ähnlicher Strukturen."
+            },
+            {
+                "text": "Falsche Klassifikationen bei überlappenden Schäden",
+                "solution": "Verbesserung der Modellarchitektur durch Multi-Label-Klassifikation, um Fälle mit mehreren Schadensarten gleichzeitig zu berücksichtigen."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    }
+    ,
 
 
 
     //Überwachung
-    { title: "Überwachungslösung",
-        date: "2023",
-        duration: "6 Monate",
-        company: "PWC",
-        status: "Abgeschlossen",
-        description: "KI-basierte DSGVO-Überwachungslösung",
-        details: `Das Ziel des Projekts war die Entwicklung einer <span class="highlight">datenschutzkonformen Überwachungslösung</span>, die <span class="highlight">Personen- und Fahrzeugdaten</span> erkennt, anonymisiert und sicher speichert. Die Lösung kombiniert <span class="highlight">KI-gestützte Objekterkennung mit Verschlüsselungstechniken</span>, um gleichzeitig die gesetzlichen Anforderungen der <span class="highlight">DSGVO</span> zu erfüllen und eine <span class="highlight">effektive Überwachung</span> zu gewährleisten.
-  
-Das Projekt wurde in mehreren Schritten realisiert: Zunächst wurden DSGVO-konforme Datenschutzmaßnahmen und Anforderungen an die KI-Modelle definiert. Für die <span class="highlight">Objekterkennung</span> wurde <span class="highlight">YOLO v5</span> integriert, das mithilfe eines  Datensatzes für die <span class="highlight">Erkennung von Fahrzeugkennzeichen feinabgestimmt (fine-tuned)</span>. <span class="highlight">DeepSORT</span> ermöglichte die <span class="highlight">Nachverfolgung und Bewegungsanalyse</span> erkannter Objekte. <span class="highlight">Algorithmen</span> zur <span class="highlight">Anonymisierung</span> sensibler Informationen wie <span class="highlight">Gesichter und Kennzeichen</span> wurden entwickelt und implementiert. Die <span class="highlight">verschlüsselte Speicherung</span> anonymisierter Daten erfolgte mithilfe des <span class="highlight">AES-Standards</span>. Abschließend wurden <span class="highlight">Modellgenauigkeit</span> mit <span class="highlight">realen und simulierten Daten getestet</span> und optimiert.
- `,
-        image: "/seccam2.webp",
-        imagep: "/highway.webp"},
+    {
+        "title": "Überwachungslösung",
+        "subtitle": "KI-basierte DSGVO-Überwachungslösung",
+        "description": "Datenschutz und Überwachung – ein scheinbarer Widerspruch. Dieses Projekt zeigt, dass beides vereinbar ist: Durch die Kombination aus künstlicher Intelligenz und Verschlüsselung entsteht ein sicheres, DSGVO-konformes Überwachungssystem. Personen- und Fahrzeugdaten werden in Echtzeit erkannt, anonymisiert und verschlüsselt gespeichert, bevor sie weiterverarbeitet werden. So bleiben sensible Informationen geschützt, während Betreiber dennoch wertvolle Einblicke in Bewegungsströme und sicherheitsrelevante Ereignisse erhalten.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "YOLO v5",
+            "DeepSORT",
+            "EDSR (Enhanced Deep Super-Resolution)",
+            "AES-256",
+            "SQL"
+        ],
+        "image": "/ueber.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "KI erkannte keine deutschen Kennzeichen",
+                "solution": "Das YOLO v5-Modell wurde mit einem eigenen Datensatz aus deutschen Kennzeichen nachtrainiert, um die Erkennungsgenauigkeit erheblich zu verbessern."
+            },
+            {
+                "text": "Erkennung bei schlechten Lichtverhältnissen",
+                "solution": "Implementierung dynamischer Kontrastanpassung und Low-Light-Enhancement, um auch bei schwacher Beleuchtung zuverlässige Ergebnisse zu liefern."
+            },
+            {
+                "text": "Hohe Rechenlast durch Echtzeit-Analyse",
+                "solution": "Modelloptimierung & Quantisierung, um die Berechnungen effizienter zu machen und die Verarbeitungsgeschwindigkeit zu maximieren."
+            },
+            {
+                "text": "Verpixelte Bilder verhinderten eine klare Erkennung",
+                "solution": "Nutzung des EDSR (Enhanced Deep Super-Resolution) Modells, um niedrig aufgelöste Bilder zu verbessern und die Lesbarkeit von Kennzeichen und Gesichtern deutlich zu erhöhen."
+            },
+            {
+                "text": "Verfolgen von Personen und Fahrzeugen über mehrere Frames hinweg",
+                "solution": "Implementierung von DeepSORT (Simple Online and Realtime Tracker), um eine stabile und präzise Nachverfolgung über mehrere Frames zu gewährleisten. Dadurch konnten Objekte konsistent identifiziert und Doppelzählungen sowie Fehlzuweisungen vermieden werden."
+            },
+            {
+                "text": "Sicherstellung der DSGVO-konformen Speicherung sensibler Daten",
+                "solution": "Implementierung von AES-256-Verschlüsselung, um personenbezogene Daten bereits vor der Speicherung zu anonymisieren. Dadurch wurde sichergestellt, dass sensible Informationen selbst bei unbefugtem Zugriff nicht lesbar sind und die Anforderungen der DSGVO vollständig erfüllt wurden."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    },
 
 
     //Gestenstreuerung
-    { title: "Gestensteuerung",
-        date: "2022",
-        duration: "1 Monate",
-        company: "Privat",
-        status: "Abgeschlossen",
-        description: "A web application made to compare genetic maps.",
-        details: `Das Projekt zielte darauf ab ein <span class="highlight">System zur berührungslosen Steuerung von PCs mittels Handgesten</span> das auf einem <span class="highlight">Raspberry Pi</span> implementiert wurde. Mithilfe von <span class="highlight">Computer-Vision-Technologien</span> und <span class="highlight">Gestenerkennung</span> ermöglichte es eine <span class="highlight">intuitive Interaktion</span> mit Computern ohne physische Eingaben.
-        
-Zur Entwicklung wurde ein <span class="highlight">Gesten-Datensatz</span> erstellt, der durch <span class="highlight">Annotation</span> und <span class="highlight">Augmentationstechniken</span> wie Rotation und Skalierung erweitert wurde. Echtzeit-Bilddaten von Handbewegungen wurden erfasst, vorverarbeitet und für das Training des Modells vorbereitet.
-
-Das Modell basierte auf einem <span class="highlight">Convolutional Neural Network (CNN)</span> mit <span class="highlight">TensorFlow Lite</span>, speziell angepasst für <span class="highlight">ressourcenarme Hardware</span>. Durch <span class="highlight">reduzierte Eingangsauflösung, Quantisierung</span> und den Einsatz von <span class="highlight">Dropout</span> und <span class="highlight">Batch</span> wurde eine <span class="highlight">hohe Erkennungsgenauigkeit</span> bei <span class="highlight">schnellen Inferenzzeiten</span> erreicht. Die <span class="highlight">Steuerungslogik</span> verband <span class="highlight">erkannte Gesten</span> mit <span class="highlight">PC-Interaktionen</span> wie <span class="highlight">Mausbewegung, Klicks</span> und <span class="highlight">Scrollen</span>, wobei <span class="highlight">OpenCV</span> für die <span class="highlight">Bildverarbeitung</span> und <span class="highlight">WebSocket</span> für die <span class="highlight">PC-Kommunikation</span> genutzt wurden.
-                  `,
-        image: "/gestenprojekt.webp",
-        imagep: "/highway.webp" },
+    {
+        "title": "Gestensteuerung",
+        "subtitle": "Steuerung eines PCs durch Handgesten mittels Computer Vision und maschinellem Lernen",
+        "description": "Dieses Projekt entstand aus der Bequemlichkeit eines Informatikers und der Idee, durch Handgesten einen PC zu steuern. Durch eine Kombination aus Computer Vision und maschinellem Lernen erkennt das System verschiedene Handbewegungen und wandelt sie in PC-Befehle um. In Zukunft soll es sogar weitere smarte Anwendungen steuern können.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "Convolutional Neural Networks (CNN) m",
+            "TensorFlow Lite",
+            "OpenCV",
+            "Augmentationstechniken",
+            "Raspberry Pi",
+            "Infrarot-Kamera",
+            "WebSockets"
+        ],
+        "image": "/gestensteurcnn.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "Kommunikation zwischen Raspberry Pi und PC",
+                "solution": "Die ursprüngliche Datenübertragung per HTTP war zu langsam für Echtzeitsteuerung. WebSockets ermöglichten eine bidirektionale, latenzarme Kommunikation zwischen Raspberry Pi und PC."
+            },
+            {
+                "text": "Das System erkannte unerwünschte Handbewegungen als Befehle",
+                "solution": "Einführung einer \"Aktivierungs-Geste\", die bewusst ausgeführt werden muss, bevor andere Gesten erkannt und umgesetzt werden."
+            },
+            {
+                "text": "Gestenerkennung funktionierte nicht im Dunkeln",
+                "solution": "Einsatz einer Infrarot-Kamera, die auch bei schlechten Lichtverhältnissen zuverlässig Handbewegungen erkennt. Zusätzlich wurde die Bildverarbeitung angepasst, um kontrastarme Aufnahmen optimal zu verarbeiten."
+            },
+            {
+                "text": "Gesten waren auf Infrarot-Aufnahmen nicht klar erkennbar",
+                "solution": "Anpassung der Bildvorverarbeitung, um den Kontrast und die Konturen von Handgesten in Infrarot-Bildern zu verbessern. Zusätzlich wurden Filter und Kantenextraktionstechniken eingesetzt, um die Gesten zuverlässiger zu identifizieren."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    },
 
 
     //WhoIsDown
-    { title: "WhoIsDown",
-        date: "2021",
-        duration: "6 Monate",
-        company: "HTW",
-        status: "Abgeschlossen",
-        description: "Last project.",
-        details: `WhoIsDown ist eine Event-Webapplikation, die es Benutzern ermöglicht, <span class="highlight">Aktivitäten und Veranstaltungen</span> einfach zu <span class="highlight">organisieren</span> und Teilnehmer zu koordinieren. Die Plattform richtet sich an Gruppen, die spontane oder geplante Treffen effizient planen möchten und bietet Funktionen wie <span class="highlight">Veranstaltungsmanagement, Teilnehmerübersicht und automatische </span>.
-        
-Das Backend der Webapplikation wurde entwickelt, um eine effiziente Verwaltung von Nutzerdaten, Veranstaltungsinformationen und Interaktionen zu ermöglichen. <span class="highlight">Nutzerprofile, Veranstaltungsdetails und Rückmeldungen</span> wurden in einer <span class="highlight">relationalen Datenbank (PostgreSQL)</span> strukturiert gespeichert, während automatische Benachrichtigungen und Erinnerungen dynamisch auf Basis der Eventdaten erstellt wurden.
-
-Die skalierbare <span class="highlight">Backend-Architektur</span> basierte auf <span class="highlight">RESTful APIs</span>, die unter anderem Benutzerregistrierung, Event-Management und Teilnehmerverwaltung ermöglichten. Zur <span class="highlight">Authentifizierung wurde JWT</span> eingesetzt, während serverseitige Validierungen und Fehlerbehandlungen die Sicherheit und Stabilität der APIs gewährleisteten. Eine optimierte Datenbankstruktur mit Fremdschlüsseln und Constraints sorgte für Datenintegrität und schnelle Abfragen. Für <span class="highlight">Benachrichtigungen</span> wurde eine Logik mit <span class="highlight">CRON-Jobs</span> implementiert, die zeitgesteuerte Erinnerungen automatisiert versendete. Abschließend wurde <span class="highlight">CI/CD (Continuous Integration/Continuous Deployment)-Prozesse</span> integriert, um eine <span class="highlight">automatisierte Bereitstellung</span> und <span class="highlight">regelmäßige Tests</span> zu gewährleisten.             `,
-        image: "/whoisdown.webp",
-        imagep: "/highway.webp" },
+    {
+        "title": "WhoIsDown",
+        "subtitle": "Einfache Event-Organisation mit automatischen Erinnerungen und Echtzeit-Updates",
+        "description": "Egal ob spontanes Treffen mit Freunden oder eine geplante Veranstaltung – WhoIsDown erleichtert die Organisation von Events. Die Plattform bietet eine einfache Teilnehmerkoordination, automatische Erinnerungen und Echtzeit-Updates, sodass keine Veranstaltung mehr im Chaos versinkt. Durch eine intuitive Benutzeroberfläche und smarte Automatisierung wird das Event-Management so einfach wie nie zuvor.",
+        "images": "/baseball.webp",
+        "technologies": [
+            "Vue",
+            "Spring Boot",
+            "PostgreSQL",
+            "JWT (Authentifizierung & Sicherheit)",
+            "CRON-Jobs (Benachrichtigungen)",
+            "Heroku"
+        ],
+        "image": "/events.jpg",
+        "status": "Abgeschlossen",
+        "date": "2024",
+        "challenges": [
+            {
+                "text": "Erste Erfahrung mit skalierbarer Backend-Architektur",
+                "solution": "Einarbeitung in RESTful API-Prinzipien, Trennung von Backend- und Frontend-Logik sowie die Nutzung von modularen Services, um das System langfristig wartbar und erweiterbar zu machen."
+            },
+            {
+                "text": "Schwierigkeiten mit API-Fehlermanagement",
+                "solution": "Einführung eines einheitlichen Fehlerhandling-Systems mit klaren API-Responses und Logging, um Debugging und Fehlerdiagnosen zu erleichtern."
+            },
+            {
+                "text": "Unsicherheiten beim Deployment auf einer Cloud-Plattform",
+                "solution": "Einarbeitung in Cloud-Hosting (Heroku), erste Erfahrung mit Deployment-Prozessen, Einrichtung von Umgebungsvariablen und Automatisierungsschritten für zukünftige Projekte."
+            }
+        ],
+        "github": "https://github.com/deinProjekt",
+        "demo": "https://deinProjekt.com"
+    },
 ];
 
 export default projects;
