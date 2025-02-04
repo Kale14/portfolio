@@ -1,74 +1,84 @@
 "use client";
 import { useState } from "react";
-import { FaExternalLinkAlt, FaGithub, FaTools, FaLightbulb, FaCode } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaTools, FaLightbulb, FaCode, FaCheckCircle } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Modal({ isOpen, onClose, project }) {
+    const [openChallenges, setOpenChallenges] = useState([]);
+
+    const toggleChallenge = (index) => {
+        setOpenChallenges(prev =>
+            prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+        );
+    };
+
     if (!isOpen || !project) return null;
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md z-50">
-            <div className="bg-gray-900 text-white p-6 rounded-xl max-w-lg w-full relative shadow-2xl transform transition-all duration-300 scale-95 animate-fadeIn">
+        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-50 flex justify-center items-start overflow-y-auto p-4 scrollbar-hide" onClick={onClose}>
+            <div className="bg-gray-900 text-white max-w-2xl w-full relative shadow-2xl transform transition-all duration-300 mb-32 top-20 animate-fadeIn rounded-xl overflow-hidden"
+                 onClick={(e) => e.stopPropagation()}>
 
                 {/* Schließen-Button */}
-                <button
-                    className="absolute top-2 right-2 text-white text-xl hover:text-gray-400 transition"
-                    onClick={onClose}
-                >
+                <button className="absolute top-2 right-2 text-white text-xl hover:text-gray-400 transition" onClick={onClose}>
                     ✕
                 </button>
 
-                {/* Titel */}
-                <h2 className="text-3xl font-bold text-green-400 mb-4">{project.title}</h2>
+                {/* Modal Inhalt */}
+                <div className="p-6">
+                    <h2 className="text-3xl font-bold text-green-400">{project.title}</h2>
+                    {project.subtitle && <p className="text-gray-300 text-xl italic mb-4">{project.subtitle}</p>}
 
-                {/* Beschreibung */}
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">{project.description}</p>
+                    <p className="text-gray-300 text-l leading-relaxed mt-5 mb-4">{project.description}</p>
 
-                {/* Technologien */}
-                <div className="border-t border-gray-700 mt-4 pt-4">
-                    <h3 className="text-lg font-semibold text-green-400 flex items-center gap-2">
-                        <FaCode /> Verwendete Technologien
-                    </h3>
-                    <p className="text-gray-300 text-sm mt-1">{project.technologies}</p>
+                    {/* Herausforderungen & Lösungen */}
+                    <div className="border-t border-gray-700 mt-4 pt-4">
+                        <h3 className="text-xl font-semibold text-green-400 flex items-center gap-2">
+                            <FaLightbulb /> Herausforderungen & Lösungen
+                        </h3>
+                        <div className="mt-2">
+                            {project.challenges.map((challenge, index) => (
+                                <div key={index} className="relative bg-gray-800 mb-4 mt-4 p-4 rounded-lg shadow-md transition-all duration-300 cursor-pointer hover:bg-gray-700"
+                                     onClick={() => toggleChallenge(index)}>
+                                    <div className="flex items-center gap-3">
+                                        <p className="text-white text-l font-semibold">{challenge.text}</p>
+                                    </div>
+
+                                    {/* Lösung */}
+                                    {openChallenges.includes(index) && (
+                                        <div className="mt-3 text-l p-4 bg-green-700 rounded-md text-green-300 flex items-start gap-3 transition-all duration-300 animate-fadeIn">
+                                            <p>{challenge.solution}</p>
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Technologien & Tools */}
+                    <div className="border-t border-gray-700 mt-4 pt-4">
+                        <h3 className="text-xl font-semibold text-green-400 flex items-center gap-2">
+                            <FaCode /> Technologien & Tools
+                        </h3>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {project.technologies.map((tech, index) => (
+                                <span key={index} className="bg-gray-800 text-white px-3 py-1 rounded-full text-l">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
-                {/* Funktionen */}
-                <div className="border-t border-gray-700 mt-4 pt-4">
-                    <h3 className="text-lg font-semibold text-green-400 flex items-center gap-2">
-                        <FaTools /> Projektfunktionen
-                    </h3>
-                    <p className="text-gray-300 text-sm mt-1">{project.features}</p>
-                </div>
-
-                {/* Herausforderungen & Learnings */}
-                <div className="border-t border-gray-700 mt-4 pt-4">
-                    <h3 className="text-lg font-semibold text-green-400 flex items-center gap-2">
-                        <FaLightbulb /> Herausforderungen & Learnings
-                    </h3>
-                    <p className="text-gray-300 text-sm mt-1">{project.challenges}</p>
-                </div>
-
-                {/* Links */}
-                <div className="mt-6 flex gap-4">
-                    {project.github && (
-                        <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-green-400 hover:text-green-500 transition"
-                        >
-                            <FaGithub /> GitHub
-                        </a>
-                    )}
-                    {project.demo && (
-                        <a
-                            href={project.demo}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-green-400 hover:text-green-500 transition"
-                        >
-                            <FaExternalLinkAlt /> Live-Demo
-                        </a>
-                    )}
+                {/* 📌 Fix für das Bild an der Kante */}
+                <div className="w-full h-80 mt-6 relative">
+                    <Image
+                        src={project.images}
+                        alt={project.title}
+                        width={800}
+                        height={250}
+                        className="absolute bottom-0 left-0 right-0 w-full h-full object-cover rounded-b-xl"
+                    />
                 </div>
             </div>
         </div>
