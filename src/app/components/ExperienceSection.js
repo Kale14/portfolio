@@ -3,7 +3,7 @@ import experiences from "./experiencesData"; // Daten für die Erfahrungen
 
 export default function ExperienceSection() {
     return (
-        <section id="experience" className="relative px-8 sm:px-40 pt-16 pb-16 mt-28">
+        <section id="experience" className="relative px-8 sm:px-40 pt-16 pb-10">
             {/* Überschrift */}
             <h2 className="text-white text-4xl font-bold mb-8">Meine Erfahrungen</h2>
 
@@ -19,9 +19,10 @@ export default function ExperienceSection() {
 
                         {/* Titel */}
                         <h3 className="text-white text-xl font-bold">{experience.title}</h3>
+                        <p className="text-gray-300 mt-1 text-sm font-bold italic leading-relaxed">{experience.postion}</p>
 
                         {/* Beschreibung */}
-                        <p className="text-gray-300 mt-2 text-sm leading-relaxed">{experience.description}</p>
+                        <p className="text-gray-300 mt-4 text-sm leading-relaxed">{experience.description}</p>
 
                         {/* Skill-Badges */}
                         <div className="mt-4 flex flex-wrap gap-2">
