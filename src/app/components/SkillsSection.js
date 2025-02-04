@@ -44,8 +44,8 @@ export default function SkillsSection() {
     const [hoveredSkill, setHoveredSkill] = useState(null);
 
     return (
-        <section id="skills" className="relative px-8 sm:px-40 pt-16">
-            <h2 className="text-start text-white text-4xl font-bold mb-12">Skills</h2>
+        <section id="skills" className="relative px-8 sm:px-40 pt-10">
+            <h2 className="text-start text-white text-4xl font-bold mb-8">Skills</h2>
 
             <div className="flex flex-wrap justify-center gap-6 p-8 border border-gray-700 rounded-xl shadow-lg relative z-10">
                 {Object.entries(skillsData).map(([category, skills]) => (

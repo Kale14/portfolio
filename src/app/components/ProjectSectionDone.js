@@ -26,13 +26,13 @@ export default function ProjectSection() {
     };
 
     return (
-        <section id="projects" className="relative min-h-screen px-8 sm:px-40 pt-16">
+        <section id="projects" className="relative min-h-screen px-8 sm:px-40 pt-10 pb-10">
             {/* Grid-Layout für die Projekte */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="relative bg-cover bg-center rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105 h-[300px]"
+                        className="relative bg-cover bg-center rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105 h-[250px]"
                         style={{ backgroundImage: `url(${project.image})` }}
                         onClick={() => openModal(project)}
                     >
