@@ -1,21 +1,24 @@
 const experiences = [
     {
-        date: "April 2022",
-        title: "Hochschule",
-        description: "Mit einer Leidenschaft für Künstliche Intelligenz und Prozessautomatisierung entwickle ich datenbasierte Lösungen mit echtem Mehrwert.",
-        skills: ["Skill A", "Skill B"]
+        date: "Feb 2024 – Jul 2024",
+        title: "Fraunhofer IZM, Berlin",
+        postion: "Wissenschaftliche Hilfskraft",
+        description: "Automatisierung manueller Prozesse mit R-Shiny zur Effizienzsteigerung im Qualitätsmanagement und Reinraum durch Identifikation von Optimierungspotenzialen, Entwicklung interaktiver Anwendungen und Usability-Tests.",
+        skills: ["Prozessautomatisierung", "Anforderungsanalyse"]
     },
     {
-        date: "März 2021",
-        title: "Praktikum",
-        description: "In meinem Praktikum habe ich an IoT-Projekten gearbeitet und datengetriebene Lösungen entwickelt.",
-        skills: ["Python", "Machine Learning"]
+        date: "Jun 2022 – Feb 2023",
+        title: "PricewaterhouseCoopers GmbH, Berlin",
+        postion: "Praktikant – Advisory",
+        description: "Entwicklung von ML-Modellen und Automatisierungslösungen mit Python sowie Implementierung von SAPUI5- und Python-Templates zur Effizienzsteigerung in IoT-, Cloud- und Smart City-Projekten.",
+        skills: ["IoT-Integration", "Machine Learning"]
     },
     {
-        date: "Juli 2020",
-        title: "Werkstudent",
-        description: "Als Werkstudent war ich an der Entwicklung interaktiver Dashboards beteiligt.",
-        skills: ["React", "Data Visualization"]
+        date: "Feb 2021 – Feb 2023",
+        title: "Hochschule für Technik und Wirtschaft, Berlin",
+        postion: "Studentische Hilfskraft",
+        description: "Entwicklung interaktiver R-Shiny-Anwendungen zur Veranschaulichung statistischer Konzepte und datengetriebenen Optimierung des Lernprozesses durch Visualisierungen und Nutzer-Feedback",
+        skills: ["Datenanalyse", "Datenvisualisierung"]
     }
 ];
 
