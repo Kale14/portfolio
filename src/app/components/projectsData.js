@@ -279,7 +279,7 @@ const projects = [
         ],
         "image": "/gestensteurcnn.jpg",
         "status": "Abgeschlossen",
-        "date": "2023",
+        "date": "2022",
         "challenges": [
             {
                 "text": "Kommunikation zwischen Raspberry Pi und PC",
