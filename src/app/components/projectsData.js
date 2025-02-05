@@ -10,7 +10,7 @@ const projects = [
         technologies: ["Google AI", "Google Cloud", "TensorFlow", "NLP", "React", "Firebase"],
         image: "/sensoria.jpg",
         status: "In Arbeit",
-        date: "2024",
+        date: "2025",
         challenges: [
             {
                 text: "Vibrationsmuster mussten intuitiv verständlich sein",
@@ -144,7 +144,7 @@ const projects = [
         ],
         "image": "/wind6.jpg",
         "status": "Abgeschlossen",
-        "date": "2024",
+        "date": "2023",
         "challenges": [
             {
                 "text": "Sensordaten in Echtzeit effizient verarbeiten",
@@ -193,7 +193,7 @@ const projects = [
         ],
         "image": "/brueck1.jpg",
         "status": "Abgeschlossen",
-        "date": "2024",
+        "date": "2023",
         "challenges": [
             {
                 "text": "Modell hatte Schwierigkeiten mit komplexen Schadensmustern",
@@ -230,7 +230,7 @@ const projects = [
         ],
         "image": "/ueber.jpg",
         "status": "Abgeschlossen",
-        "date": "2024",
+        "date": "2023",
         "challenges": [
             {
                 "text": "KI erkannte keine deutschen Kennzeichen",
@@ -279,7 +279,7 @@ const projects = [
         ],
         "image": "/gestensteurcnn.jpg",
         "status": "Abgeschlossen",
-        "date": "2024",
+        "date": "2023",
         "challenges": [
             {
                 "text": "Kommunikation zwischen Raspberry Pi und PC",
@@ -318,7 +318,7 @@ const projects = [
         ],
         "image": "/events.jpg",
         "status": "Abgeschlossen",
-        "date": "2024",
+        "date": "2022",
         "challenges": [
             {
                 "text": "Erste Erfahrung mit skalierbarer Backend-Architektur",
