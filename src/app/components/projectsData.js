@@ -6,7 +6,7 @@ const projects = [
     { title: "Sensoria",
         subtitle: "Barrierefreies Baseball-Erlebnis",
         description: "Der Sensoria wurde beim Google Cloud x MLB™ Hackathon entwickelt, um blinden Menschen ein interaktives und barrierefreies Spielerlebnis zu bieten. Das System nutzt Echtzeit-Spielereignisse, um über intuitive Vibrationsmuster und KI-generierte Audiozusammenfassungen ein Spielgefühl zu vermitteln – ganz ohne visuelle Reize",
-        images: "/baseball.webp",
+        images: "",
         technologies: ["Google AI", "Google Cloud", "TensorFlow", "NLP", "React", "Firebase"],
         image: "/sensoria.jpg",
         status: "In Arbeit",
