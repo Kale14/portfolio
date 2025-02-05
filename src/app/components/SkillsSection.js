@@ -1,8 +1,10 @@
 "use client";
 import { FaPython, FaJava, FaReact, FaDocker, FaAws, FaGit, FaCuttlefish } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
-import { SiMysql, SiPostgresql, SiMongodb, SiDjango, SiFlask, SiTensorflow, SiPytorch, SiBootstrap, SiTailwindcss, SiSap, SiKotlin, SiDart, SiR, SiHtml5, SiSqlite, SiFirebase, SiPostman } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
+import { SiMysql, SiHuggingface, SiPostgresql, SiMongodb, SiDjango, SiFlask, SiTensorflow, SiPytorch, SiBootstrap, SiTailwindcss, SiSap, SiKotlin, SiDart, SiR, SiHtml5, SiSqlite, SiFirebase, SiPostman, SiScikitlearn } from "react-icons/si";
 import { useState } from "react";
+
 
 const skillsData = {
     "Languages": [
@@ -11,6 +13,7 @@ const skillsData = {
         { icon: TbBrandTypescript, name: "TypeScript" },
         { icon: SiHtml5, name: "HTML/CSS" },
         { icon: SiR, name: "R" },
+        { icon: FaGolang, name: "Go" },
         { icon: SiKotlin, name: "Kotlin" },
         { icon: SiDart, name: "Dart" },
         { icon: FaCuttlefish, name: "C#" }
@@ -20,10 +23,12 @@ const skillsData = {
         { icon: SiTensorflow, name: "TensorFlow" },
         { icon: SiFlask, name: "Flask" },
         { icon: SiDjango, name: "Django" },
+        { icon: SiScikitlearn, name: "Scikit-learn" },
         { icon: FaReact, name: "ReactJS" },
         { icon: SiBootstrap, name: "Bootstrap" },
         { icon: SiTailwindcss, name: "Tailwind CSS" },
-        { icon: SiSap, name: "SAPUI5" }
+        { icon: SiSap, name: "SAPUI5" },
+        { icon: SiHuggingface, name: "Huggingface" }
     ],
     "Databases": [
         { icon: SiMysql, name: "MySQL" },
