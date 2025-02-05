@@ -20,22 +20,6 @@ Die <span class="highlight">Entwicklung</span> basierte auf einer <span class="h
         imagep: "/highway.png" },
 
 
-    //Part Bachelorarbeit
-//     { title: "Bachelorarbeit",
-//         date: "10/2024",
-//         duration: "3 Monate",
-//         company: "HTW",
-//         status: "In Arbeit",
-//         description: "Another amazing project.",
-//         details: `Das Ziel des Projekts war die Entwicklung eines digitalen Zwillings für Windkraftanlagen, um Betriebs- und Wartungsprozesse zu optimieren. Der digitale Zwilling ermöglichte die kontinuierliche Überwachung von Sensordaten in Echtzeit sowie die frühzeitige Identifikation von Anomalien. Dies trug zur Reduzierung von Wartungskosten, einer gesteigerten Anlagenverfügbarkeit und einer verbesserten Entscheidungsgrundlage für Betreiber bei.
-//
-// Das Projekt basierte auf Sensordaten von Windkraftanlagen, einschließlich Temperatur, Vibration, Rotorendrehzahl, Energieproduktion und Wetterbedingungen. Eine speziell entwickelte Datenpipeline ermöglichte die Erfassung, Filterung und zentrale Bereitstellung der Daten in Echtzeit. Zusätzlich wurden historische Daten zur Modellkalibrierung und Validierung integriert, um die Vorhersagegenauigkeit zu optimieren. Um die Analysequalität zu gewährleisten, kamen Methoden wie Datenbereinigung, Normalisierung und Feature-Engineering zum Einsatz.
-//
-// Dabei erfolgte eine Analyse der Stakeholder- Anforderungen, um Ziele zu definieren. Anschließend wurde eine skalierbare Datenpipeline entwickelt, die Sensordaten aus verschiedenen Quellen in Echtzeit aggregierte und aufbereitete. Der hybride CUSum_LoMST-Algorithmus, der plötzliche Abweichungen und langfristige Trends identifiziert, wurde implementiert, um Wartungsbedarf vorherzusagen. Ein interaktives Dashboard auf Basis von SAPUI5 ermöglichte eine visuelle Darstellung der Daten, wodurch potenzielle Störungen und Wartungsbedarfe schnell erkennbar wurden. Abschließend durchlief das System Tests mit realen und simulierten Daten.
-//                   `,
-//         image: "/chatbot.webp",
-//         imagep: "/highway.png" },
-
 
 
 
