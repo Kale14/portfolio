@@ -12,15 +12,20 @@ export default function Modal({ isOpen, onClose, project }) {
         );
     };
 
+    const handleClose = () => {
+        setOpenChallenges([]);
+        onClose(); //
+    };
+
     if (!isOpen || !project) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-50 flex justify-center items-start overflow-y-auto p-4 scrollbar-hide" onClick={onClose}>
+        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-50 flex justify-center items-start overflow-y-auto p-4 scrollbar-hide" onClick={handleClose}>
             <div className="bg-gray-900 text-white max-w-2xl w-full relative shadow-2xl transform transition-all duration-300 mb-32 top-20 animate-fadeIn rounded-xl overflow-hidden"
                  onClick={(e) => e.stopPropagation()}>
 
                 {/* Schließen-Button */}
-                <button className="absolute top-2 right-2 text-white text-xl hover:text-gray-400 transition" onClick={onClose}>
+                <button className="absolute top-2 right-2 text-white text-xl hover:text-gray-400 transition" onClick={handleClose}>
                     ✕
                 </button>
 
@@ -70,14 +75,14 @@ export default function Modal({ isOpen, onClose, project }) {
                     </div>
                 </div>
 
-                {/* 📌 Fix für das Bild an der Kante */}
-                <div className="w-full h-80 mt-6 relative">
+                {/* Bild an der Kante */}
+                <div className="w-full relative mt-4">
                     <Image
                         src={project.images}
                         alt={project.title}
                         width={800}
                         height={250}
-                        className="absolute bottom-0 left-0 right-0 w-full h-full object-cover rounded-b-xl"
+                        className="w-full h-auto object-cover rounded-b-xl"
                     />
                 </div>
             </div>
