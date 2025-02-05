@@ -25,7 +25,7 @@ const projects = [
                 solution: "Anpassung der Vibrationsstärke basierend auf Nutzerfeedback und personalisierbare Einstellungen, um die Sensibilität individuell anzupassen.",
             },
             {
-                text: "Vibrationsmuster mussten intuitiv verständlich sein",
+                text: "Ausfall von Echtzeit-Datenquellen",
                 solution: "Implementierung eines Fallback-Mechanismus, der bei fehlenden Echtzeit-Daten auf alternative Datenquellen zurückgreift.",
             },
         ],
@@ -40,7 +40,7 @@ const projects = [
         "title": "Bachelorarbeit",
         "subtitle": "KI-gestützter Chatbot zur Optimierung des Wissensmanagements in Unternehmen",
         "description": "Wissen effizient abrufen, statt lange zu suchen. Im Rahmen meiner Bachelorarbeit wurde ein KI-gestützter Chatbot entwickelt, der das Wissensmanagement in Unternehmen optimiert. Durch die Integration moderner Sprachmodelle wie GPT-2, Llama 2 und Mistral kann der Chatbot dynamisch auf Anfragen reagieren, kontextbezogene Informationen bereitstellen und kontinuierlich aktualisiert werden.",
-        "images": "/baseball.webp",
+        "images": "/baf2.jpg",
         "technologies": [
             "Django (MTV-Architektur)",
             "GPT-2",
@@ -90,7 +90,7 @@ const projects = [
         "title": "UrbanGuide",
         "subtitle": "KI-gestützte App zur Stadterkundung mit Gebäudeerkennung und personalisierten Empfehlungen",
         "description": "Eine Stadt zu erkunden, sollte intuitiv und individuell sein. UrbanGuide kombiniert Gebäudeerkennung, personalisierte Empfehlungen und dynamische Tourplanung, um Sehenswürdigkeiten in Echtzeit zu identifizieren und interaktive Reiseerlebnisse zu schaffen. Durch die Integration von KI-gestützter Objekterkennung und Sprachmodellen bietet die App detaillierte Infos zu architektonischen Highlights und Sehenswürdigkeiten. Nutzer erhalten kontextbezogene Erklärungen in Echtzeit, die basierend auf erkannten Gebäuden generiert werden – alles in einer nutzerfreundlichen Oberfläche.",
-        "images": "/baseball.webp",
+        "images": "/urban3.jpg",
         "technologies": [
             "Google Gemini",
             "Google Maps API",
@@ -112,7 +112,7 @@ const projects = [
             },
             {
                 "text": "Verständliche Antworten für Touristen mit unterschiedlichem Vorwissen",
-                "solution": "Anpassung der generierten Antworten basierend auf einem Nutzerprofil, das Vorwissen (z. B. Laie oder Architektur-Fan) berücksichtigt, um Texte klar, informativ und zielgruppengerecht zu gestalten."
+                "solution": "Anpassungsmöglichkeiten der generierten Antworten basierend auf dem Vorwissen der Nutzer, um Texte klar, informativ und zielgruppengerecht zu gestalten."
             },
             {
                 "text": "Unterschiedliche Informationstiefen",
@@ -130,7 +130,7 @@ const projects = [
         "title": "Digital Twin",
         "subtitle": "Datengetriebene Lösung zur Optimierung von Windkraftanlagen",
         "description": "Wie kann man den Betrieb von Windkraftanlagen effizienter, kostensparender und zuverlässiger gestalten? Die Antwort: Ein digitaler Zwilling. In diesem Projekt habe ich eine intelligente, datengetriebene Lösung entwickelt, die Sensordaten in Echtzeit analysiert und Anomalien frühzeitig erkennt. Durch den Einsatz modernster Algorithmen ermöglicht das System eine vorausschauende Wartung und reduziert Ausfallzeiten– alles in einer interaktiven, leicht verständlichen Oberfläche.",
-        "images": "/baseball.webp",
+        "images": "/dti2.jpg",
         "technologies": [
             "Python",
             "Pandas",
@@ -152,7 +152,7 @@ const projects = [
             },
             {
                 "text": "Präzise Anomalieerkennung ohne Fehldiagnosen",
-                "solution": "Entwicklung eines hybriden Algorithmus (CUSum_LoMST), der feine Abweichungen erkennt und gezielt auf bevorstehende Wartungen hinweist."
+                "solution": "Einsatz eines hybriden Algorithmus (CUSum_LoMST), der feine Abweichungen erkennt und gezielt auf bevorstehende Wartungen hinweist."
             },
             {
                 "text": "Verschiedene Stakeholder benötigten verständliche und handlungsorientierte Visualisierungen",
@@ -163,8 +163,8 @@ const projects = [
                 "solution": "Implementierung von Datenbereinigungs- und Glättungsverfahren zur Eliminierung fehlerhafter Messwerte und Vermeidung unnötiger Wartungseinsätze."
             },
             {
-                "text": "Fehlalarme durch verrauschte oder unvollständige Sensordaten",
-                "solution": "Implementierung von Datenbereinigungs- und Glättungsverfahren zur Eliminierung fehlerhafter Messwerte und Vermeidung unnötiger Wartungseinsätze."
+                "text": "Skalierbarkeit der Lösung bei steigender Datenmenge",
+                "solution": "Durch eine modulare Architektur wurden alle Komponenten (Generator, Hydraulik, Getriebe, Gondel, Rotoblätter) eigenständig behandelt, sodass sie unabhängig skaliert und optimiert werden können. Dies ermöglicht eine effiziente Lastverteilung und Anpassung an wachsende Sensordatenmengen."
             }
         ],
         "github": "https://github.com/deinProjekt",
@@ -178,7 +178,7 @@ const projects = [
         "title": "Brückenschäden",
         "subtitle": "Klassifizierung von Brückenschäden mit maschinellem Lernen",
         "description": "Brückenschäden frühzeitig erkennen und gezielt beheben – bevor sie zur Gefahr werden. Dieses Projekt nutzt maschinelles Lernen zur automatisierten Schadensklassifikation, um die Effizienz von Wartungsprozessen zu steigern. Durch die Analyse von annotierten Bilddaten erkennt das Modell Risse, Abplatzungen und Korrosion mit hoher Präzision, priorisiert Instandhaltungsmaßnahmen und erhöht so die Sicherheit von Infrastrukturen.",
-        "images": "/baseball.webp",
+        "images": "/bruck3.jpg",
         "technologies": [
             "Convolutional Neural Networks (CNN)",
             "TensorFlow",
@@ -220,7 +220,7 @@ const projects = [
         "title": "Überwachungslösung",
         "subtitle": "KI-basierte DSGVO-Überwachungslösung",
         "description": "Datenschutz und Überwachung – ein scheinbarer Widerspruch. Dieses Projekt zeigt, dass beides vereinbar ist: Durch die Kombination aus künstlicher Intelligenz und Verschlüsselung entsteht ein sicheres, DSGVO-konformes Überwachungssystem. Personen- und Fahrzeugdaten werden in Echtzeit erkannt, anonymisiert und verschlüsselt gespeichert, bevor sie weiterverarbeitet werden. So bleiben sensible Informationen geschützt, während Betreiber dennoch wertvolle Einblicke in Bewegungsströme und sicherheitsrelevante Ereignisse erhalten.",
-        "images": "/baseball.webp",
+        "images": "/auto.jpg",
         "technologies": [
             "YOLO v5",
             "DeepSORT",
@@ -267,14 +267,14 @@ const projects = [
         "title": "Gestensteuerung",
         "subtitle": "Steuerung eines PCs durch Handgesten mittels Computer Vision und maschinellem Lernen",
         "description": "Dieses Projekt entstand aus der Bequemlichkeit eines Informatikers und der Idee, durch Handgesten einen PC zu steuern. Durch eine Kombination aus Computer Vision und maschinellem Lernen erkennt das System verschiedene Handbewegungen und wandelt sie in PC-Befehle um. In Zukunft soll es sogar weitere smarte Anwendungen steuern können.",
-        "images": "/baseball.webp",
+        "images": "/hand_bbox.jpg",
         "technologies": [
             "Convolutional Neural Networks (CNN) m",
             "TensorFlow Lite",
             "OpenCV",
+            "Sklearn",
             "Augmentationstechniken",
             "Raspberry Pi",
-            "Infrarot-Kamera",
             "WebSockets"
         ],
         "image": "/gestensteurcnn.jpg",
@@ -290,12 +290,12 @@ const projects = [
                 "solution": "Einführung einer \"Aktivierungs-Geste\", die bewusst ausgeführt werden muss, bevor andere Gesten erkannt und umgesetzt werden."
             },
             {
-                "text": "Gestenerkennung funktionierte nicht im Dunkeln",
-                "solution": "Einsatz einer Infrarot-Kamera, die auch bei schlechten Lichtverhältnissen zuverlässig Handbewegungen erkennt. Zusätzlich wurde die Bildverarbeitung angepasst, um kontrastarme Aufnahmen optimal zu verarbeiten."
+                "text": "Unzuverlässige Gestenerkennung durch unterschiedliche Beleuchtungsverhältnisse",
+                "solution": "Statt nur mit Bilddaten zu arbeiten, wurde ein hybrides Modell aus CNN und Keypoints entwicklet. Dadurch wird die Gestenerkennung robuster gegenüber Beleuchtung, Handgrößen und Perspektivwechseln."
             },
             {
-                "text": "Gesten waren auf Infrarot-Aufnahmen nicht klar erkennbar",
-                "solution": "Anpassung der Bildvorverarbeitung, um den Kontrast und die Konturen von Handgesten in Infrarot-Bildern zu verbessern. Zusätzlich wurden Filter und Kantenextraktionstechniken eingesetzt, um die Gesten zuverlässiger zu identifizieren."
+                "text": "Zu hohe Rechenlast auf schwacher Hardware",
+                "solution": "Das Modell wurde mit TensorFlow Lite quantisiert, um die Rechenlast zu verringern. Falls Keypoints eindeutig genug sind, wird die CNN-Verarbeitung übersprungen, um Leistung zu sparen. Dadurch wird sichergestellt, dass die Gestenerkennung auch auf Systemen wie einem Raspberry Pi in Echtzeit funktioniert."
             }
         ],
         "github": "https://github.com/deinProjekt",
@@ -308,11 +308,10 @@ const projects = [
         "title": "WhoIsDown",
         "subtitle": "Einfache Event-Organisation mit automatischen Erinnerungen und Echtzeit-Updates",
         "description": "Egal ob spontanes Treffen mit Freunden oder eine geplante Veranstaltung – WhoIsDown erleichtert die Organisation von Events. Die Plattform bietet eine einfache Teilnehmerkoordination, automatische Erinnerungen und Echtzeit-Updates, sodass keine Veranstaltung mehr im Chaos versinkt. Durch eine intuitive Benutzeroberfläche und smarte Automatisierung wird das Event-Management so einfach wie nie zuvor.",
-        "images": "/baseball.webp",
+        "images": "/wid1.jpg",
         "technologies": [
             "Vue",
-            "Spring Boot",
-            "PostgreSQL",
+            "Spring Boot",            "PostgreSQL",
             "JWT (Authentifizierung & Sicherheit)",
             "CRON-Jobs (Benachrichtigungen)",
             "Heroku"
