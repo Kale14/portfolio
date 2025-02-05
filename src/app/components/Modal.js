@@ -65,7 +65,7 @@ export default function Modal({ isOpen, onClose, project }) {
                         <h3 className="text-xl font-semibold text-green-400 flex items-center gap-2">
                             <FaCode /> Technologien & Tools
                         </h3>
-                        <div className="flex flex-wrap gap-2 mt-2">
+                        <div className="flex flex-wrap gap-2 mt-2 mb-4">
                             {project.technologies.map((tech, index) => (
                                 <span key={index} className="bg-gray-800 text-white px-3 py-1 rounded-full text-l">
                                     {tech}
@@ -76,15 +76,17 @@ export default function Modal({ isOpen, onClose, project }) {
                 </div>
 
                 {/* Bild an der Kante */}
-                <div className="w-full relative mt-4">
-                    <Image
-                        src={project.images}
-                        alt={project.title}
-                        width={800}
-                        height={250}
-                        className="w-full h-auto object-cover rounded-b-xl"
-                    />
-                </div>
+                {project.images && project.images.length > 0 && (
+                    <div className="w-full relative">
+                        <Image
+                            src={project.images}
+                            alt={project.title}
+                            width={800}
+                            height={250}
+                            className="w-full h-auto object-cover rounded-b-xl"
+                        />
+                    </div>
+                )}
             </div>
         </div>
     );
