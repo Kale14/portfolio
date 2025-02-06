@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
     "gsap": "^3.12.7",
     "html-react-parser": "^5.2.2",
     "next": "15.1.5",
