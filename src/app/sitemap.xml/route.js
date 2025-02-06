@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-    const baseUrl = "https://deine-domain.com"; // Ersetze mit deiner echten Domain
+    const baseUrl = "https://khalilhasan-portfolio.com";
 
     // Nur die Hauptseite aufnehmen
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
