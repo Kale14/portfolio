@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
             <meta name="robots" content="index, follow" />
             <meta name="author" content="Khalil Hasan" />
             <link rel="canonical" href="https://khalilhasan-portfolio.com/" />
+            <title></title>
         </head>
         <body className="relative bg-[#0a192f] text-white">
             {children} {/* Inhalte der Seite */}
