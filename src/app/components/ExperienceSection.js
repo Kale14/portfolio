@@ -12,7 +12,7 @@ export default function ExperienceSection() {
                 {experiences.map((experience, index) => (
                     <div
                         key={index}
-                        className="relative border border-gray-700 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                        className="relative border border-gray-700 p-6 rounded-lg shadow-lg transition-transform duration-300"
                     >
                         {/* Datum */}
                         <p className="text-green-400 font-semibold text-sm mb-2">{experience.date}</p>

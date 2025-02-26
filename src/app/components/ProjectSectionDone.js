@@ -20,7 +20,7 @@ export default function ProjectSection() {
 
     // Farben für Status-Badge
     const statusInfo = {
-        "In Arbeit": { bgColor: "bg-yellow-900", textColor: "text-white", text: "In Arbeit" },
+        "In Arbeit": { bgColor: "bg-blue-900", textColor: "text-white", text: "In Arbeit" },
         "Abgeschlossen": { bgColor: "bg-green-900", textColor: "text-white", text: "Abgeschlossen" },
         "Geplant": { bgColor: "bg-gray-500", textColor: "text-white", text: "Geplant" },
     };
@@ -51,7 +51,8 @@ export default function ProjectSection() {
 
                         {/* Projektname unten */}
                         <div className="absolute bottom-4 left-4 text-white text-xl font-semibold">
-                            {project.title}
+                            <div>{project.title}</div>
+                            <div className="text-xs">{project.company}</div>
                         </div>
                     </div>
                 ))}

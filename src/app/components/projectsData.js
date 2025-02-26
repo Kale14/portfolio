@@ -10,6 +10,7 @@ const projects = [
         technologies: ["Google AI", "Google Cloud", "TensorFlow", "NLP", "React", "Firebase"],
         image: "/sensoria.jpg",
         status: "In Arbeit",
+        company: "Google",
         date: "2025",
         challenges: [
             {
@@ -37,11 +38,11 @@ const projects = [
 
     //Part Bachelorarbeit
     {
-        "title": "Bachelorarbeit",
-        "subtitle": "KI-gestützter Chatbot zur Optimierung des Wissensmanagements in Unternehmen",
-        "description": "Wissen effizient abrufen, statt lange zu suchen. Im Rahmen meiner Bachelorarbeit wurde ein KI-gestützter Chatbot entwickelt, der das Wissensmanagement in Unternehmen optimiert. Durch die Integration moderner Sprachmodelle wie GPT-2, Llama 2 und Mistral kann der Chatbot dynamisch auf Anfragen reagieren, kontextbezogene Informationen bereitstellen und kontinuierlich aktualisiert werden.",
-        "images": "/baf2.jpg",
-        "technologies": [
+        title: "Bachelorarbeit",
+        subtitle: "KI-gestützter Chatbot zur Optimierung des Wissensmanagements in Unternehmen",
+        description: "Wissen effizient abrufen, statt lange zu suchen. Im Rahmen meiner Bachelorarbeit wurde ein KI-gestützter Chatbot entwickelt, der das Wissensmanagement in Unternehmen optimiert. Durch die Integration moderner Sprachmodelle wie GPT-2, Llama 2 und Mistral kann der Chatbot dynamisch auf Anfragen reagieren, kontextbezogene Informationen bereitstellen und kontinuierlich aktualisiert werden.",
+        images: "/baf2.jpg",
+        technologies: [
             "Django (MTV-Architektur)",
             "GPT-2",
             "Llama 2",
@@ -51,10 +52,11 @@ const projects = [
             "Automatisierte Datenpipeline",
             "Optuna"
         ],
-        "image": "/chatbot2.jpg",
-        "status": "Abgeschlossen",
-        "date": "2024",
-        "challenges": [
+        image: "/chatbot2.jpg",
+        status: "Abgeschlossen",
+        company: "Hochschule für Technik und Wirtschaft",
+        date: "2024",
+        challenges: [
             {
                 "text": "Modelle mussten mit begrenzten Ressourcen effizient trainiert werden",
                 "solution": "Einsatz von Q-LoRA (Quantized LoRA) zur Speicher- und Rechenzeitoptimierung, um große Modelle auf begrenzter Hardware zu feintunen."
@@ -80,28 +82,29 @@ const projects = [
                 "solution": "Verwendung von Optuna für eine automatische Hyperparameter-Suche, um die beste Kombination aus Lernrate, Batchgröße und Epochenanzahl zu ermitteln."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     },
 
 
     //Part Hackathon2
     {
-        "title": "UrbanGuide",
-        "subtitle": "KI-gestützte App zur Stadterkundung mit Gebäudeerkennung und personalisierten Empfehlungen",
-        "description": "Eine Stadt zu erkunden, sollte intuitiv und individuell sein. UrbanGuide kombiniert Gebäudeerkennung, personalisierte Empfehlungen und dynamische Tourplanung, um Sehenswürdigkeiten in Echtzeit zu identifizieren und interaktive Reiseerlebnisse zu schaffen. Durch die Integration von KI-gestützter Objekterkennung und Sprachmodellen bietet die App detaillierte Infos zu architektonischen Highlights und Sehenswürdigkeiten. Nutzer erhalten kontextbezogene Erklärungen in Echtzeit, die basierend auf erkannten Gebäuden generiert werden – alles in einer nutzerfreundlichen Oberfläche.",
-        "images": "/urban3.jpg",
-        "technologies": [
+        title: "UrbanGuide",
+        subtitle: "KI-gestützte App zur Stadterkundung mit Gebäudeerkennung und personalisierten Empfehlungen",
+        description: "Eine Stadt zu erkunden, sollte intuitiv und individuell sein. UrbanGuide kombiniert Gebäudeerkennung, personalisierte Empfehlungen und dynamische Tourplanung, um Sehenswürdigkeiten in Echtzeit zu identifizieren und interaktive Reiseerlebnisse zu schaffen. Durch die Integration von KI-gestützter Objekterkennung und Sprachmodellen bietet die App detaillierte Infos zu architektonischen Highlights und Sehenswürdigkeiten. Nutzer erhalten kontextbezogene Erklärungen in Echtzeit, die basierend auf erkannten Gebäuden generiert werden – alles in einer nutzerfreundlichen Oberfläche.",
+        images: "/urban3.jpg",
+        technologies: [
             "Google Gemini",
             "Google Maps API",
             "Google Cloud Functions",
             "Google Firestore",
             "Flutter",
         ],
-        "image": "/Urbanguid.jpg",
-        "status": "Abgeschlossen",
-        "date": "2024",
-        "challenges": [
+        image: "/Urbanguid.jpg",
+        status: "Abgeschlossen",
+        company: "Google",
+        date: "2024",
+        challenges: [
             {
                 "text": "Verbindungsabbrüche der Applikation bei Benutzer",
                 "solution": "Implementierung eines Offline-Modus, der die zuletzt geladenen Tourdaten zwischenspeichert und eine reibungslose Nutzung ohne Internetverbindung ermöglicht."
@@ -119,19 +122,19 @@ const projects = [
                 "solution": "Einführung von dynamischen Info-Ebenen, bei denen Nutzer selbst entscheiden können, ob sie kurze Zusammenfassungen oder tiefgehende Details über ein Gebäude erhalten möchten."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     },
 
 
 
     //Digital Twin
     {
-        "title": "Digital Twin",
-        "subtitle": "Datengetriebene Lösung zur Optimierung von Windkraftanlagen",
-        "description": "Wie kann man den Betrieb von Windkraftanlagen effizienter, kostensparender und zuverlässiger gestalten? Die Antwort: Ein digitaler Zwilling. In diesem Projekt habe ich eine intelligente, datengetriebene Lösung entwickelt, die Sensordaten in Echtzeit analysiert und Anomalien frühzeitig erkennt. Durch den Einsatz modernster Algorithmen ermöglicht das System eine vorausschauende Wartung und reduziert Ausfallzeiten– alles in einer interaktiven, leicht verständlichen Oberfläche.",
-        "images": "/dti2.jpg",
-        "technologies": [
+        title: "Digital Twin",
+        subtitle: "Datengetriebene Lösung zur Optimierung von Windkraftanlagen",
+        description: "Wie kann man den Betrieb von Windkraftanlagen effizienter, kostensparender und zuverlässiger gestalten? Die Antwort: Ein digitaler Zwilling. In diesem Projekt habe ich eine intelligente, datengetriebene Lösung entwickelt, die Sensordaten in Echtzeit analysiert und Anomalien frühzeitig erkennt. Durch den Einsatz modernster Algorithmen ermöglicht das System eine vorausschauende Wartung und reduziert Ausfallzeiten– alles in einer interaktiven, leicht verständlichen Oberfläche.",
+        images: "/dti2.jpg",
+        technologies: [
             "Python",
             "Pandas",
             "NumPy",
@@ -142,10 +145,11 @@ const projects = [
             "SAPUI5",
             "MySQL"
         ],
-        "image": "/wind6.jpg",
-        "status": "Abgeschlossen",
-        "date": "2023",
-        "challenges": [
+        image: "/wind6.jpg",
+        status: "Abgeschlossen",
+        company: "PricewaterhouseCoopers",
+        date: "2023",
+        challenges: [
             {
                 "text": "Sensordaten in Echtzeit effizient verarbeiten",
                 "solution": "Eine skalierbare Datenpipeline, die große Datenmengen aggregiert, filtert und vorbereitet, um Verzögerungen zu minimieren."
@@ -167,19 +171,19 @@ const projects = [
                 "solution": "Durch eine modulare Architektur wurden alle Komponenten (Generator, Hydraulik, Getriebe, Gondel, Rotoblätter) eigenständig behandelt, sodass sie unabhängig skaliert und optimiert werden können. Dies ermöglicht eine effiziente Lastverteilung und Anpassung an wachsende Sensordatenmengen."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     },
 
 
 
     //Klassifizierung
     {
-        "title": "Brückenschäden",
-        "subtitle": "Klassifizierung von Brückenschäden mit maschinellem Lernen",
-        "description": "Brückenschäden frühzeitig erkennen und gezielt beheben – bevor sie zur Gefahr werden. Dieses Projekt nutzt maschinelles Lernen zur automatisierten Schadensklassifikation, um die Effizienz von Wartungsprozessen zu steigern. Durch die Analyse von annotierten Bilddaten erkennt das Modell Risse, Abplatzungen und Korrosion mit hoher Präzision, priorisiert Instandhaltungsmaßnahmen und erhöht so die Sicherheit von Infrastrukturen.",
-        "images": "/bruck3.jpg",
-        "technologies": [
+        title: "Brückenschäden",
+        subtitle: "Klassifizierung von Brückenschäden mit maschinellem Lernen",
+        description: "Brückenschäden frühzeitig erkennen und gezielt beheben – bevor sie zur Gefahr werden. Dieses Projekt nutzt maschinelles Lernen zur automatisierten Schadensklassifikation, um die Effizienz von Wartungsprozessen zu steigern. Durch die Analyse von annotierten Bilddaten erkennt das Modell Risse, Abplatzungen und Korrosion mit hoher Präzision, priorisiert Instandhaltungsmaßnahmen und erhöht so die Sicherheit von Infrastrukturen.",
+        images: "/bruck3.jpg",
+        technologies: [
             "Convolutional Neural Networks (CNN)",
             "TensorFlow",
             "Keras",
@@ -191,10 +195,11 @@ const projects = [
             "Grid Search",
             "k-fache Cross-Validation"
         ],
-        "image": "/brueck1.jpg",
-        "status": "Abgeschlossen",
-        "date": "2023",
-        "challenges": [
+        image: "/brueck1.jpg",
+        status: "Abgeschlossen",
+        company: "PricewaterhouseCoopers",
+        date: "2023",
+        challenges: [
             {
                 "text": "Modell hatte Schwierigkeiten mit komplexen Schadensmustern",
                 "solution": "Anpassung der CNN-Architektur mit zusätzlichen Convolutional-Schichten und Integration von Batch Normalization zur besseren Merkmalsextraktion."
@@ -208,8 +213,8 @@ const projects = [
                 "solution": "Verbesserung der Modellarchitektur durch Multi-Label-Klassifikation, um Fälle mit mehreren Schadensarten gleichzeitig zu berücksichtigen."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     }
     ,
 
@@ -217,21 +222,22 @@ const projects = [
 
     //Überwachung
     {
-        "title": "Überwachungslösung",
-        "subtitle": "KI-basierte DSGVO-Überwachungslösung",
-        "description": "Datenschutz und Überwachung – ein scheinbarer Widerspruch. Dieses Projekt zeigt, dass beides vereinbar ist: Durch die Kombination aus künstlicher Intelligenz und Verschlüsselung entsteht ein sicheres, DSGVO-konformes Überwachungssystem. Personen- und Fahrzeugdaten werden in Echtzeit erkannt, anonymisiert und verschlüsselt gespeichert, bevor sie weiterverarbeitet werden. So bleiben sensible Informationen geschützt, während Betreiber dennoch wertvolle Einblicke in Bewegungsströme und sicherheitsrelevante Ereignisse erhalten.",
-        "images": "/auto.jpg",
-        "technologies": [
+        title: "Überwachungslösung",
+        subtitle: "KI-basierte DSGVO-Überwachungslösung",
+        description: "Datenschutz und Überwachung – ein scheinbarer Widerspruch. Dieses Projekt zeigt, dass beides vereinbar ist: Durch die Kombination aus künstlicher Intelligenz und Verschlüsselung entsteht ein sicheres, DSGVO-konformes Überwachungssystem. Personen- und Fahrzeugdaten werden in Echtzeit erkannt, anonymisiert und verschlüsselt gespeichert, bevor sie weiterverarbeitet werden. So bleiben sensible Informationen geschützt, während Betreiber dennoch wertvolle Einblicke in Bewegungsströme und sicherheitsrelevante Ereignisse erhalten.",
+        images: "/auto.jpg",
+        company: "PricewaterhouseCoopers",
+        technologies: [
             "YOLO v5",
             "DeepSORT",
             "EDSR (Enhanced Deep Super-Resolution)",
             "AES-256",
             "SQL"
         ],
-        "image": "/ueber.jpg",
-        "status": "Abgeschlossen",
-        "date": "2023",
-        "challenges": [
+        image: "/ueber.jpg",
+        status: "Abgeschlossen",
+        date: "2023",
+        challenges: [
             {
                 "text": "KI erkannte keine deutschen Kennzeichen",
                 "solution": "Das YOLO v5-Modell wurde mit einem eigenen Datensatz aus deutschen Kennzeichen nachtrainiert, um die Erkennungsgenauigkeit erheblich zu verbessern."
@@ -257,18 +263,18 @@ const projects = [
                 "solution": "Implementierung von AES-256-Verschlüsselung, um personenbezogene Daten bereits vor der Speicherung zu anonymisieren. Dadurch wurde sichergestellt, dass sensible Informationen selbst bei unbefugtem Zugriff nicht lesbar sind und die Anforderungen der DSGVO vollständig erfüllt wurden."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     },
 
 
     //Gestenstreuerung
     {
-        "title": "Gestensteuerung",
-        "subtitle": "Steuerung eines PCs durch Handgesten mittels Computer Vision und maschinellem Lernen",
-        "description": "Dieses Projekt entstand aus der Bequemlichkeit eines Informatikers und der Idee, durch Handgesten einen PC zu steuern. Durch eine Kombination aus Computer Vision und maschinellem Lernen erkennt das System verschiedene Handbewegungen und wandelt sie in PC-Befehle um. In Zukunft soll es sogar weitere smarte Anwendungen steuern können.",
-        "images": "/hand_bbox.jpg",
-        "technologies": [
+        title: "Gestensteuerung",
+        subtitle: "Steuerung eines PCs durch Handgesten mittels Computer Vision und maschinellem Lernen",
+        description: "Dieses Projekt entstand aus der Bequemlichkeit eines Informatikers und der Idee, durch Handgesten einen PC zu steuern. Durch eine Kombination aus Computer Vision und maschinellem Lernen erkennt das System verschiedene Handbewegungen und wandelt sie in PC-Befehle um. In Zukunft soll es sogar weitere smarte Anwendungen steuern können.",
+        images: "/hand_bbox.jpg",
+        technologies: [
             "Convolutional Neural Networks (CNN) m",
             "TensorFlow Lite",
             "OpenCV",
@@ -277,10 +283,11 @@ const projects = [
             "Raspberry Pi",
             "WebSockets"
         ],
-        "image": "/gestensteurcnn.jpg",
-        "status": "Abgeschlossen",
-        "date": "2022",
-        "challenges": [
+        image: "/gestensteurcnn.jpg",
+        status: "Abgeschlossen",
+        date: "2022",
+        company: "Privates Projekt",
+        challenges: [
             {
                 "text": "Kommunikation zwischen Raspberry Pi und PC",
                 "solution": "Die ursprüngliche Datenübertragung per HTTP war zu langsam für Echtzeitsteuerung. WebSockets ermöglichten eine bidirektionale, latenzarme Kommunikation zwischen Raspberry Pi und PC."
@@ -298,28 +305,29 @@ const projects = [
                 "solution": "Das Modell wurde mit TensorFlow Lite quantisiert, um die Rechenlast zu verringern. Falls Keypoints eindeutig genug sind, wird die CNN-Verarbeitung übersprungen, um Leistung zu sparen. Dadurch wird sichergestellt, dass die Gestenerkennung auch auf Systemen wie einem Raspberry Pi in Echtzeit funktioniert."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     },
 
 
     //WhoIsDown
     {
-        "title": "WhoIsDown",
-        "subtitle": "Einfache Event-Organisation mit automatischen Erinnerungen und Echtzeit-Updates",
-        "description": "Egal ob spontanes Treffen mit Freunden oder eine geplante Veranstaltung – WhoIsDown erleichtert die Organisation von Events. Die Plattform bietet eine einfache Teilnehmerkoordination, automatische Erinnerungen und Echtzeit-Updates, sodass keine Veranstaltung mehr im Chaos versinkt. Durch eine intuitive Benutzeroberfläche und smarte Automatisierung wird das Event-Management so einfach wie nie zuvor.",
-        "images": "/wid1.jpg",
-        "technologies": [
+        title: "WhoIsDown",
+        subtitle: "Einfache Event-Organisation mit automatischen Erinnerungen und Echtzeit-Updates",
+        description: "Egal ob spontanes Treffen mit Freunden oder eine geplante Veranstaltung – WhoIsDown erleichtert die Organisation von Events. Die Plattform bietet eine einfache Teilnehmerkoordination, automatische Erinnerungen und Echtzeit-Updates, sodass keine Veranstaltung mehr im Chaos versinkt. Durch eine intuitive Benutzeroberfläche und smarte Automatisierung wird das Event-Management so einfach wie nie zuvor.",
+        images: "/wid1.jpg",
+        technologies: [
             "Vue",
             "Spring Boot",            "PostgreSQL",
             "JWT (Authentifizierung & Sicherheit)",
             "CRON-Jobs (Benachrichtigungen)",
             "Heroku"
         ],
-        "image": "/events.jpg",
-        "status": "Abgeschlossen",
-        "date": "2022",
-        "challenges": [
+        image: "/events.jpg",
+        status: "Abgeschlossen",
+        date: "2022",
+        company: "Hochschule für Technik und Wirtschaft",
+        challenges: [
             {
                 "text": "Erste Erfahrung mit skalierbarer Backend-Architektur",
                 "solution": "Einarbeitung in RESTful API-Prinzipien, Trennung von Backend- und Frontend-Logik sowie die Nutzung von modularen Services, um das System langfristig wartbar und erweiterbar zu machen."
@@ -333,8 +341,8 @@ const projects = [
                 "solution": "Einarbeitung in Cloud-Hosting (Heroku), erste Erfahrung mit Deployment-Prozessen, Einrichtung von Umgebungsvariablen und Automatisierungsschritten für zukünftige Projekte."
             }
         ],
-        "github": "https://github.com/deinProjekt",
-        "demo": "https://deinProjekt.com"
+        github: "https://github.com/deinProjekt",
+        demo: "https://deinProjekt.com"
     },
 ];
 

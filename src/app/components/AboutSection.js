@@ -9,13 +9,13 @@ export default function AboutSection() {
                 {/* Linke Seite: Überschrift + Text */}
                 <div className="text-white text-left max-w-2xl sm:max-w-3xl lg:max-w-4xl order-1 sm:order-1">
                     <h1 className="text-7xl sm:text-8xl font-bold leading-tight">
-                        Hallo, ich bin <span className="text-green-400">Khalil</span>
+                        Hallo, ich bin <span className="text-green-500">Khalil</span>
                     </h1>
                     <p className="text-3xl mt-8 leading-relaxed">
                         Mit Leidenschaft für KI und Prozessautomatisierung entwickle ich kreative, datengetriebene Lösungen mit echtem Mehrwert. Mein Fokus liegt dabei nicht nur auf dem Ergebnis, sondern auch darauf, die dahinterliegenden Prozesse zu verstehen – stets mit dem Ziel, innovative Anwendungen zu gestalten!
                     </p>
                     <button
-                        className="mt-12 bg-green-500 hover:bg-green-600 text-white font-semibold py-5 px-12 rounded shadow-lg text-2xl"
+                        className="mt-12 bg-green-600 hover:bg-green-700 text-white font-semibold py-5 px-12 rounded shadow-lg text-2xl"
                         onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}>
                         Projekte ansehen
                     </button>
