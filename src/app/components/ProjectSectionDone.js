@@ -52,7 +52,7 @@ export default function ProjectSection() {
                         {/* Projektname unten */}
                         <div className="absolute bottom-4 left-4 text-white text-xl font-semibold">
                             <div>{project.title}</div>
-                            <div className="text-xs">{project.company}</div>
+                            <div className="text-sm">{project.company}</div>
                         </div>
                     </div>
                 ))}
